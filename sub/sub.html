@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub Page</title>
+    <link rel="stylesheet" href="sub.css">
+    <script defer src="js/sub.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="style_banner">
+        <div class="style_banner_inner">
+            <span class="txt01">구독 시작하면 3,000원 즉시 할인 · 무료 교환 · 무료 배송</span>
+            <span class="txt02">
+                <a href="#">내 취향 커피 추천받기</a>
+                <i class="xi-angle-right-min"></i>
+            </span>
+            <div class="close_btn">
+                <i class="xi-close"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="headerWrap">
+        <header class="header">
+            <div class="gnbBox">
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">로그인</a></li>
+                        <li>
+                            <div>
+                                <a href="#">장바구니</a>
+                            </div>
+                            <div class="shopping_basket">
+                                <img src="../img/shopping_basket.jpg" alt="장바구니">
+                            </div>
+                            <div class="count">1</div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <div class="lnbBox">
+                <nav class="lnb">
+                    <div class="lnb_left">
+                        <div id="menuBtn">
+                            <i class="xi-bars"></i>
+                        </div>
+                        <ul>
+                            <li class="brand_list">
+                                브랜드 검색
+                            </li>
+                            <li>모든 커피</li>
+                            <li>내 커피 취향테스트</li>
+                        </ul>
+                    </div>
+                    <div class="lnb_right">
+                        <ul>
+                            <li><a href="#">싱글오리진</a></li>
+                            <li><a href="#">블렌드</a></li>
+                            <li class="subscribe"><a href="#">구독하기</a>
+                                <div class="free_shipping">무료배송</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input type="image" id="search_box" src="../img/btn_hd_search.png">
+                        <input type="text" id="search_form">
+
+                    </div>
+                    <div class="search_cont">
+                        <div class="logoBox">
+                            <a href="../index.html">
+                                <div class="logo">
+                                    <img src="../img/logo.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+    </div>
+
+
+
+
+    <div class="brand_search">
+        <div class="brand_search_inner">
+            <input type="text" id="brand_search" placeholder="브랜드 검색하기">
+            <i class="xi-search"></i>
+            <div class="consonant">
+                <button type="button" class="all">All</button>
+                <ul>
+                    <li>ㄱ</li>
+                    <li>ㄴ</li>
+                    <li>ㄷ</li>
+                    <li>ㄹ</li>
+                    <li>ㅁ</li>
+                    <li>ㅂ</li>
+                    <li>ㅅ</li>
+                    <li>ㅇ</li>
+                    <li>ㅈ</li>
+                    <li>ㅊ</li>
+                    <li>ㅋ</li>
+                    <li>ㅌ</li>
+                    <li>ㅍ</li>
+                    <li>ㅎ</li>
+                </ul>
+                <button type="button" class="eng">ENG</button>
+            </div>
+
+            <ul class="brand_searh_list">
+                <li>
+                    <ul>
+                        <li><a href="#">리플로우 커피</a></li>
+                        <li><a href="#">디카프워크룸</a></li>
+                        <li><a href="#">웨이브온 커피</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">슬러핀 커피</a></li>
+                        <li><a href="#">리플렉트 커피</a></li>
+                        <li><a href="#">55도 커피</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">프로토콜 커피</a></li>
+                        <li><a href="#">토치 커피</a></li>
+                        <li><a href="#">FELT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">컬러드 빈</a></li>
+                        <li><a href="#">카페플롬</a></li>
+                        <li><a href="#">식물학 커피</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">오드이븐</a></li>
+                        <li><a href="#">하우트 커피 컴퍼니</a></li>
+                        <li><a href="#">히떼 로스터리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">콩볶는 사람들</a></li>
+                        <li><a href="#">커넥츠커피</a></li>
+                        <li><a href="#">베르크</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">커피몽타주</a></li>
+                        <li><a href="#">폰트 커피</a></li>
+                        <li><a href="#">한국 커피</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">하늘에 커피</a></li>
+                        <li><a href="#">차군 커피</a></li>
+                        <li><a href="#">리버벨</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">디벨로핑룸</a></li>
+                        <li><a href="#">알렉스더커피</a></li>
+                        <li><a href="#">수수커피</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="menuWrap">
+        <div class="lnb_subMenu">
+            <ul>
+                <li><strong><a href="#">전체메뉴</a></strong>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </li>
+                <li><strong><a href="#">모든커피</a></strong>
+                    <ul>
+                        <li><a href="#">브랜드</a></li>
+                        <li><a href="#">싱글오리진</a></li>
+                        <li><a href="#">블랜드</a></li>
+                    </ul>
+                </li>
+                <li><strong><a href="#">내 입맛 커피</a></strong>
+                    <ul>
+                        <li><a href="#">내 커피 취향테스트</a></li>
+                        <li><a href="#">구독하기</a></li>
+                        <li><a href="#">구독후기</a></li>
+                    </ul>
+                </li>
+                <li><strong><a href="#">커뮤니티</a></strong>
+                    <ul>
+                        <li><a href="#">EVENT / NEWS</a></li>
+                        <li><a href="#">REVIEW</a></li>
+                    </ul>
+                </li>
+                <li><strong><a href="#">고객센터</a></strong>
+                    <ul>
+                        <li><a href="#">NOTICE</a></li>
+                        <li><a href="#">Q & A</a></li>
+                        <li><a href="#">1:1문의</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong><a href="#">ABOUT AS</a></strong>
+                    <ul>
+                        <li><a href="#">BRAND</a></li>
+                        <li><a href="#">입점문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="wrap">
+        <nav class="breadcrumb">
+            <a href="../index.html">홈</a> > <a href="sub.html">모든커피</a>
+        </nav>
+        <section class="style_main">
+            <div class="title">모든커피</div>
+            <div class="tab">
+                <ul>
+                    <li class="on">모든 브랜드</li>
+                    <li>블랜드</li>
+                    <li>싱글오리진</li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="style_wrapper">
+                <div class="hide_mobile_wrapper">
+                    <div class="hide_mobile">
+                        <ul>
+                            <li class="strong">커피 찾기</li>
+                            <li>디 카페인
+                                <i class="xi-angle-down-min"></i>
+                            </li>
+                            <input type="checkbox" id="hamBtn">
+                            <li class="flavor">맛과 향<i class="xi-angle-down-min"></i>
+                                <i class="xi-angle-up-min"></i>
+                                <label for="hamBtn" class="openBtn">
+
+                                </label>
+                                <label for="hamBtn" class="closeBtn">
+
+                                </label>
+                            </li>
+                            <div class="taste tab">
+                                <div class="taste01">달콤</div>
+                                <div class="taste02">고소</div>
+                                <div class="taste03">상큼</div>
+                                <div class="taste04">쌉쌀</div>
+                                <div class="taste05">밸런스</div>
+                                <div class="taste06">깔끔한</div>
+                                <div class="taste07">부드러운</div>
+                                <div class="taste08">묵직한</div>
+                                <div class="taste09">과일</div>
+                                <div class="taste10">꽃향기</div>
+                                <div class="taste11">초콜릿</div>
+                                <div class="taste12">견과류</div>
+                                <div class="taste13">스모키</div>
+                                <div class="taste14">허브</div>
+                                <div class="taste15">시나몬</div>
+                                <div class="taste16">긴여운</div>
+                                <div class="taste17">풍부한</div>
+                                <div class="taste18">은은한</div>
+                                <div class="taste19">화사한</div>
+                            </div>
+                            <li>로스팅 브랜드
+                                <i class="xi-angle-down-min"></i>
+                            </li>
+                            <li>원산지
+                                <i class="xi-angle-down-min"></i>
+                            </li>
+                            <li>가공 방법
+                                <i class="xi-angle-down-min"></i>
+                            </li>
+                            <li>가격대
+                                <i class="xi-angle-down-min"></i>
+                            </li>
+                            <li>원두 특징
+                                <i class="xi-angle-down-min"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="style_list">
+                    <ul class="style_list_tab">
+                        <li><a href="#">추천순</a></li>
+                        <li><a href="#">판매인기순</a></li>
+                        <li><a href="#">낮은가격순</a></li>
+                        <li><a href="#">높은가격순</a></li>
+                        <li><a href="#">상품평순</a></li>
+                        <li><a href="#">등록일순</a></li>
+                    </ul>
+
+
+
+
+
+
+                    <div class="tab_sheet">
+                        <ul class="items_coffees on_sheet">
+                            <li>
+                                <a href="../detail/detail.html">
+                                    <div class="01_coffee_img_01 img">
+                                        <img src="img/01_coffee_img_01.jpg" alt="coffee01">
+                                    </div>
+                                    <div class="01_coffee_img_01 txt">
+                                        <p class="item_name">[콩볶는사람들] 스프링 블렌드</p>
+                                        <span class="item_name_explain">#밀키 & 은은한</span>
+                                        <p class="item_price">12,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/01_logo_img_01.png" alt="콩볶는사람들">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_02 img">
+                                        <img src="img/01_coffee_img_02.jpg" alt="coffee02">
+                                    </div>
+                                    <div class="01_coffee_img_02 txt">
+                                        <p class="item_name">[커피몽타주] 비터스윗 라이트 에디션 2</p>
+                                        <span class="item_name_explain">#쌉쌀 & 묵직한</span>
+                                        <p class="item_price">12,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/01_logo_img_02.png" alt="커피몽타주">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_03 img">
+                                        <img src="img/01_coffee_img_03.jpg" alt="coffee03">
+                                    </div>
+                                    <div class="01_coffee_img_03 txt">
+                                        <p class="item_name">[커피몽타주] 센스 앤 센서빌리티</p>
+                                        <span class="item_name_explain">#상큼 & 깔끔한</span>
+                                        <p class="item_price">15,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/01_logo_img_02.png" alt="커피몽타주">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_04 img">
+                                        <img src="img/01_coffee_img_04.jpg" alt="coffee04">
+                                    </div>
+                                    <div class="01_coffee_img_04 txt">
+                                        <p class="item_name">[커피몽타주] 비터스윗 라이트 에디션 1</p>
+                                        <span class="item_name_explain">#밸런스 & 부드러운</span>
+                                        <p class="item_price">18,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/01_logo_img_02.png" alt="커피몽타주">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_05 img">
+                                        <img src="img/01_coffee_img_05.jpg" alt="coffee05">
+                                    </div>
+                                    <div class="01_coffee_img_05 txt">
+                                        <p class="item_name">[영앤도터스] 룰라바이</p>
+                                        <span class="item_name_explain">#달콤 & 상큼</span>
+                                        <p class="item_price">18,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/01_logo_img_03.png" alt="영앤도터스">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_06 img">
+                                        <img src="img/01_coffee_img_06.jpg" alt="coffee06">
+                                    </div>
+                                    <div class="01_coffee_img_06 txt">
+                                        <p class="item_name">[영앤도터스] 에티오피아 예가체프</p>
+                                        <span class="item_name_explain">#달콤 & 상큼</span>
+                                        <p class="item_price">22,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/01_logo_img_03.png" alt="영앤도터스">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_07 img">
+                                        <img src="img/01_coffee_img_07.jpg" alt="coffee07">
+                                    </div>
+                                    <div class="01_coffee_img_07 txt">
+                                        <p class="item_name">[영앤도터스] 파퓨아뉴기니 모리타</p>
+                                        <span class="item_name_explain">#달콤 & 깔끔한</span>
+                                        <p class="item_price">18,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/01_logo_img_03.png" alt="영앤도터스">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_08 img">
+                                        <img src="img/01_coffee_img_08.jpg" alt="coffee08">
+                                    </div>
+                                    <div class="01_coffee_img_08 txt">
+                                        <p class="item_name">[영앤도터스] 나탈리</p>
+                                        <span class="item_name_explain">#달콤 & 고소</span>
+                                        <p class="item_price">16,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/01_logo_img_03.png" alt="영앤도터스">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_09 img">
+                                        <img src="img/01_coffee_img_09.jpg" alt="coffee09">
+                                    </div>
+                                    <div class="01_coffee_img_09 txt">
+                                        <p class="item_name">[영앤도터스] 콜린</p>
+                                        <span class="item_name_explain">#달콤 & 고소</span>
+                                        <p class="item_price">16,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/01_logo_img_03.png" alt="영앤도터스">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_10 img">
+                                        <img src="img/01_coffee_img_10.png" alt="coffee10">
+                                    </div>
+                                    <div class="01_coffee_img_10 txt">
+                                        <p class="item_name">[하늘에커피] 하늘에 시그니처 블랜딩</p>
+                                        <span class="item_name_explain">#상큼 & 깔끔한</span>
+                                        <p class="item_price">11,500원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/01_logo_img_04.png" alt="하늘에커피">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_11 img">
+                                        <img src="img/01_coffee_img_11.png" alt="coffee11">
+                                    </div>
+                                    <div class="01_coffee_img_11 txt">
+                                        <p class="item_name">[하늘에커피] 콜롬비아 디카페인</p>
+                                        <span class="item_name_explain">#밸런스 & 견과류</span>
+                                        <p class="item_price">11,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/01_logo_img_04.png" alt="하늘에커피">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_12 img">
+                                        <img src="img/01_coffee_img_12.png" alt="coffee12">
+                                    </div>
+                                    <div class="01_coffee_img_12 txt">
+                                        <p class="item_name">[하늘에커피] 돌담 in 애월</p>
+                                        <span class="item_name_explain">#밸런스 & 묵직한</span>
+                                        <p class="item_price">11,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/01_logo_img_04.png" alt="하늘에커피">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="items_coffees">
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_01 img">
+                                        <img src="img/02_coffee_img_01.webp" alt="coffee01">
+                                    </div>
+                                    <div class="01_coffee_img_01 txt">
+                                        <p class="item_name">W 블렌드</p>
+                                        <span class="item_name_explain">#쌉쌀 & 묵직한</span>
+                                        <p class="item_price">5,500원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/02_01_REFLOW_logo.png" alt="reflow">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_02 img">
+                                        <img src="img/02_coffee_img_02.webp" alt="coffee02">
+                                    </div>
+                                    <div class="01_coffee_img_02 txt">
+                                        <p class="item_name">F 블렌드</p>
+                                        <span class="item_name_explain">#고소 & 달콤</span>
+                                        <p class="item_price">9,200원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/02_01_REFLOW_logo.png" alt="reflow">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_03 img">
+                                        <img src="img/02_coffee_img_03.webp" alt="coffee03">
+                                    </div>
+                                    <div class="01_coffee_img_03 txt">
+                                        <p class="item_name">R 블렌드</p>
+                                        <span class="item_name_explain">#밸런스 & 달콤</span>
+                                        <p class="item_price">10,400원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/02_01_REFLOW_logo.png" alt="reflow">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_04 img">
+                                        <img src="img/02_coffee_img_04.webp" alt="coffee04">
+                                    </div>
+                                    <div class="01_coffee_img_04 txt">
+                                        <p class="item_name">카라멜 슬럽</p>
+                                        <span class="item_name_explain">#고소 & 부드러운</span>
+                                        <p class="item_price">13,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/02_02_Sluffin_logo.png" alt="슬러핀">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_05 img">
+                                        <img src="img/02_coffee_img_05.webp" alt="coffee05">
+                                    </div>
+                                    <div class="01_coffee_img_05 txt">
+                                        <p class="item_name">나비</p>
+                                        <span class="item_name_explain">#꽃향기 & 과일</span>
+                                        <p class="item_price">23,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/namusairo_logo.webp" alt="나무사이로">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_06 img">
+                                        <img src="img/02_coffee_img_06.webp" alt="coffee06">
+                                    </div>
+                                    <div class="01_coffee_img_06 txt">
+                                        <p class="item_name">블렌드 슈퍼 노멀</p>
+                                        <span class="item_name_explain">#밸런스 & 쌉쌀</span>
+                                        <p class="item_price">16,500원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/protokol_logo.webp" alt="프로토콜">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_07 img">
+                                        <img src="img/02_coffee_img_07.webp" alt="coffee07">
+                                    </div>
+                                    <div class="01_coffee_img_07 txt">
+                                        <p class="item_name">브라운 블렌딩 커피</p>
+                                        <span class="item_name_explain">#쌉쌀 & 묵직한</span>
+                                        <p class="item_price">7,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/link_logo.webp" alt="링크 커피 로스터스">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_08 img">
+                                        <img src="img/02_coffee_img_08.webp" alt="coffee08">
+                                    </div>
+                                    <div class="01_coffee_img_08 txt">
+                                        <p class="item_name">그린 블렌딩 커피</p>
+                                        <span class="item_name_explain">#밸런스 & 깔끔한</span>
+                                        <p class="item_price">7,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/link_logo.webp" alt="링크 커피 로스터스">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_09 img">
+                                        <img src="img/02_coffee_img_09.webp" alt="coffee09">
+                                    </div>
+                                    <div class="01_coffee_img_09 txt">
+                                        <p class="item_name">데일리뷰티 블렌드</p>
+                                        <span class="item_name_explain">#초콜릿 & 달콤</span>
+                                        <p class="item_price">13,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/susu_logo.webp" alt="수수커피">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_10 img">
+                                        <img src="img/02_coffee_img_10.webp" alt="coffee10">
+                                    </div>
+                                    <div class="01_coffee_img_10 txt">
+                                        <p class="item_name">BEIGE 블랜드</p>
+                                        <span class="item_name_explain">#꽃향기 & 깔끔한</span>
+                                        <p class="item_price">12,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/coloured_bean.webp" alt="컬러드빈">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_11 img">
+                                        <img src="img/02_coffee_img_11.webp" alt="coffee11">
+                                    </div>
+                                    <div class="01_coffee_img_11 txt">
+                                        <p class="item_name">BRICK 블랜드</p>
+                                        <span class="item_name_explain">#달콤 & 고소</span>
+                                        <p class="item_price">10,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/coloured_bean.webp" alt="컬러드빈">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_12 img">
+                                        <img src="img/02_coffee_img_12.webp" alt="coffee12">
+                                    </div>
+                                    <div class="01_coffee_img_12 txt">
+                                        <p class="item_name">피크 블렌드</p>
+                                        <span class="item_name_explain">#달콤 & 밸런스</span>
+                                        <p class="item_price">10,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/oddeven_logo.webp" alt="오드이븐">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="items_coffees">
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_01 img">
+                                        <img src="img/03_coffee_img_01.webp" alt="coffee01">
+                                    </div>
+                                    <div class="01_coffee_img_01 txt">
+                                        <p class="item_name">코스타리카 엘 베네피시오 블랙 허니</p>
+                                        <span class="item_name_explain">#달콤 & 부드러운</span>
+                                        <p class="item_price">16,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/signpost_coffee_logo.webp" alt="싸인포스트커피">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_02 img">
+                                        <img src="img/03_coffee_img_02.webp" alt="coffee02">
+                                    </div>
+                                    <div class="01_coffee_img_02 txt">
+                                        <p class="item_name">에티오피아 시다마 벤사 케라모 워시드</p>
+                                        <span class="item_name_explain">#상큼 & 깔끔한</span>
+                                        <p class="item_price">15,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/signpost_coffee_logo.webp" alt="싸인포스트커피">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_03 img">
+                                        <img src="img/03_coffee_img_03.webp" alt="coffee03">
+                                    </div>
+                                    <div class="01_coffee_img_03 txt">
+                                        <p class="item_name">그레이프</p>
+                                        <span class="item_name_explain">#달콤 & 꽃향기</span>
+                                        <p class="item_price">36,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/namusairo_logo.webp" alt="나무사이로">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_04 img">
+                                        <img src="img/03_coffee_img_04.webp" alt="coffee04">
+                                    </div>
+                                    <div class="01_coffee_img_04 txt">
+                                        <p class="item_name">스트로베리</p>
+                                        <span class="item_name_explain">#과일 & 달콤</span>
+                                        <p class="item_price">36,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/namusairo_logo.webp" alt="나무사이로">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_05 img">
+                                        <img src="img/03_coffee_img_05.webp" alt="coffee05">
+                                    </div>
+                                    <div class="01_coffee_img_05 txt">
+                                        <p class="item_name">몽상스</p>
+                                        <span class="item_name_explain">#밸런스 & 달콤</span>
+                                        <p class="item_price">18,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/namusairo_logo.webp" alt="나무사이로">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="01_coffee_img_06 img">
+                                        <img src="img/03_coffee_img_06.webp" alt="coffee06">
+                                    </div>
+                                    <div class="01_coffee_img_06 txt">
+                                        <p class="item_name">와이칸 다크</p>
+                                        <span class="item_name_explain">#초콜릿 & 고소</span>
+                                        <p class="item_price">13,000원</p>
+                                    </div>
+                                    <div class="items_coffees_logo">
+                                        <img src="img/namusairo_logo.webp" alt="나무사이로">
+                                    </div>
+                                </a>
+                                <div class="hover_icon">
+                                    <div class="icon01">
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </div>
+                                    <div class="icon02">
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </div>
+                                    <div class="icon03">
+                                        <img src="img/shopping_cart.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+    </div>
+    <div class="footerWrap">
+        <div class="footer_top">
+            <div class="footer_top_inner">
+                <ul class="list">
+                    <li class="list01">
+                        <p class="cs_center">cs center</p>
+                        <h2>070-4647-1868</h2>
+                        <p class="opening_hours">오전 10:00 ~ 오후 7:00<br>
+                            점심시간 : 오후 12:00 ~ 2:00<br>
+                            토 / 일 / 공휴일 휴무</p>
+                    </li>
+
+                    <li class="list02">
+                        <p class="store_guide">store_guide</p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/sevice_center.png" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <div class="txt01">HELP</div>
+                                        <button>고객센터</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/delivery_tracking.png" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <div class="txt01">ORDER</div>
+                                        <button>배송조회</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/product_inquiry.png" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <div class="txt01">Q & A</div>
+                                        <button>상품문의</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/product_review.png" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <div class="txt01">REVIEW</div>
+                                        <button>상품후기</button>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list03">
+                        <p class="return">return · exchange</p>
+                        <ul>
+                            <li class="
+                            shipping">배송/택배</li>
+                            <li class="
+                            exchange">교환/반품</li>
+                        </ul>
+                        <div class="parcel">
+                            <p>택배 : 로젠택배 : 1588-9988<br>
+                                월~금 08:00~18:00 / 토 09:00 ~ 13:00</p>
+                            <a href="#">
+                                <button>택배사 바로가기</button></a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="footer_lnb">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">AGREEMENT</a></li>
+                    <li class="privacy"><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">STORE GUIDE</a></li>
+                    <li><a href="#">CS CENTER</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_middle">
+            <div class="footer_middle_inner">
+                <div class="footer_middle_left">
+                    (주)컨슈머브릿지 / 대표: 신재현, 박성환 / 개인정보보호책임자: 신재현 / 사업자등록번호: 713-86-01467 / 통신판매업신고번호: 제2021-서울강남-02469호
+                    사업장소재지: 서울 강남구 테헤란로2길 27 패스트파이브 빌딩 9층 915호
+                    주식회사 컨슈머브릿지는 전자상거래 등에서의 소비자보호에 관한 법률에 따른 통신판매중개자로서 중개하는 통신판매에 관여하여서는 통신판매의 당사자가 아니며
+                    상품의 주문, 배송 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.
+                </div>
+                <div class="footer_middle_right">
+                    <img src="../img/logo.jpg" alt="로고">
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            ⓒ 2021 Consumer Bridge, Inc. All rights reserved
+        </div>
+    </div>
+
+
+    <div class="quick_menu">
+        <div class="search">
+            <a href="#">
+                <img src="../img/btn_hd_search.png" alt="검색">
+            </a>
+        </div>
+
+        <div class="shopping_basket">
+            <a href="#">
+                <img src="../img/shopping_basket.jpg" alt="장바구니">
+            </a>
+        </div>
+
+        <div class="delivery_tracking">
+            <a href="#">
+                <img src="../img/delivery_tracking.png" alt="배송조회">
+            </a>
+        </div>
+
+        <div class="recently_viewed">
+            <a href="#">
+                <img src="../img/recently_viewed.jpg" alt="최근본상품">
+            </a>
+        </div>
+
+        <div class="goTop">
+            <i class="xi-angle-up-thin"></i>
+        </div>
+        <div class="goBottom">
+            <i class="xi-angle-down-thin"></i>
+        </div>
+    </div>
+
+    <div class="quick_menu_hover">
+        <div class="search_hover">검색</div>
+        <div class="shopping_basket_hover">장바구니(1)</div>
+        <div class="delivery_tracking_hover">배송조회</div>
+        <div class="recently_viewed_hover">최근 본 상품</div>
+    </div>
+
+
+
+</body>
+
+<script>
+    $(function () {
+        let tab = $(".style_main .tab li");
+        let sheet = $(".tab_sheet ul");
+
+        tab.click(function () {
+            let target = $(this);
+            let i = target.index();
+
+            tab.removeClass("on");
+            tab.eq(i).addClass("on");
+
+            sheet.removeClass("on_sheet");
+            sheet.eq(i).addClass("on_sheet");
+        });
+    });
+</script>
+
+<script>
+    $(window).load(function () {
+        $(function () {
+            $(".quick_menu div").hover(
+                function () {
+                    $(".quick_menu_hover div").fadeIn();
+                },
+                function () {
+                    $(".quick_menu_hover div").fadeOut();
+                }
+            );
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        //TOP 버튼
+        $(".goTop").fadeOut();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 450) {
+                $(".goTop").fadeIn();
+            } else {
+                $(".goTop").fadeOut();
+            }
+        });
+        $(".goTop").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 300);
+            return false;
+        });
+    });
+    var scrollHeight = $(document).height();
+
+    $(document).ready(function () {
+        //TOP 버튼
+        $(".goBottom").fadeOut();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 450) {
+                $(".goBottom").fadeIn();
+            } else {
+                $(".goBottom").fadeOut();
+            }
+        });
+
+        $(".goBottom").click(function () {
+            $("html, body").animate({ scrollTop: scrollHeight }, 300);
+            return false;
+        });
+    });
+</script>
+
+<script>
+    /* size click */
+    var div2 = document.querySelectorAll(".taste >div");
+
+    function handleClick(event) {
+        console.log(event.target);
+        // console.log(this);
+        // 콘솔창을 보면 둘다 동일한 값이 나온다
+
+        console.log(event.target.classList);
+
+        if (event.target.classList[1] === "clicked") {
+            event.target.classList.remove("clicked");
+        } else {
+            for (let i = 0; i < div2.length; i++) {
+                div2[i].classList.remove("clicked");
+            }
+
+            event.target.classList.add("clicked");
+        }
+    }
+
+
+    function init() {
+        for (var i = 0; i < div2.length; i++) {
+            div2[i].addEventListener("click", handleClick);
+        }
+    }
+    init();
+</script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- 
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (index + 1) + "</span>";
+            },
+        },
+    });
+</script> -->
+
+
+
+
+</html>

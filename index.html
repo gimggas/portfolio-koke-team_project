@@ -1,0 +1,2759 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/main.js"></script>
+
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+
+</head>
+
+<body style="overflow-x: hidden">
+    <div class="style_banner">
+        <div class="style_banner_inner">
+            <span class="txt01">구독 시작하면 3,000원 즉시 할인 · 무료 교환 · 무료 배송</span>
+            <span class="txt02">
+                <a href="#">내 취향 커피 추천받기</a>
+                <i class="xi-angle-right-min"></i>
+            </span>
+            <div class="close_btn">
+                <i class="xi-close"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="headerWrap">
+        <header class="header">
+            <div class="gnbBox">
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">로그인</a></li>
+                        <li>
+                            <div>
+                                <a href="#">장바구니</a>
+                            </div>
+                            <div class="shopping_basket">
+                                <img src="img/shopping_basket.jpg" alt="장바구니">
+                            </div>
+                            <div class="count">1</div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <div class="lnbBox">
+                <nav class="lnb">
+                    <div class="lnb_left">
+                        <div id="menuBtn">
+                            <i class="xi-bars"></i>
+                        </div>
+                        <ul>
+                            <li class="brand_list">
+                                브랜드 검색
+                            </li>
+                            <li><a href="./sub/sub.html">모든 커피</a></li>
+                            <li>내 커피 취향테스트</li>
+                        </ul>
+                    </div>
+                    <div class="lnb_right">
+                        <ul>
+                            <li><a href="#">싱글오리진</a></li>
+                            <li><a href="#">블렌드</a></li>
+                            <li class="subscribe"><a href="#">구독하기</a>
+                                <div class="free_shipping">무료배송</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input type="image" id="search_box" src="img/btn_hd_search.png">
+                        <input type="text" id="search_form">
+
+                    </div>
+                    <div class="search_cont">
+                        <div class="logoBox">
+                            <a href="index.html">
+                                <div class="logo">
+                                    <img src="img/logo.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+    </div>
+
+
+
+
+    <div class="brand_search">
+        <div class="brand_search_inner">
+            <input type="text" id="brand_search" placeholder="브랜드 검색하기">
+            <i class="xi-search"></i>
+            <div class="consonant">
+                <button type="button" class="all">All</button>
+                <ul>
+                    <li>ㄱ</li>
+                    <li>ㄴ</li>
+                    <li>ㄷ</li>
+                    <li>ㄹ</li>
+                    <li>ㅁ</li>
+                    <li>ㅂ</li>
+                    <li>ㅅ</li>
+                    <li>ㅇ</li>
+                    <li>ㅈ</li>
+                    <li>ㅊ</li>
+                    <li>ㅋ</li>
+                    <li>ㅌ</li>
+                    <li>ㅍ</li>
+                    <li>ㅎ</li>
+                </ul>
+                <button type="button" class="eng">ENG</button>
+            </div>
+
+            <ul class="brand_searh_list">
+                <li>
+                    <ul>
+                        <li><a href="#">리플로우 커피</a></li>
+                        <li><a href="#">디카프워크룸</a></li>
+                        <li><a href="#">웨이브온 커피</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">슬러핀 커피</a></li>
+                        <li><a href="#">리플렉트 커피</a></li>
+                        <li><a href="#">55도 커피</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">프로토콜 커피</a></li>
+                        <li><a href="#">토치 커피</a></li>
+                        <li><a href="#">FELT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">컬러드 빈</a></li>
+                        <li><a href="#">카페플롬</a></li>
+                        <li><a href="#">식물학 커피</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">오드이븐</a></li>
+                        <li><a href="#">하우트 커피 컴퍼니</a></li>
+                        <li><a href="#">히떼 로스터리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">콩볶는 사람들</a></li>
+                        <li><a href="#">커넥츠커피</a></li>
+                        <li><a href="#">베르크</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">커피몽타주</a></li>
+                        <li><a href="#">폰트 커피</a></li>
+                        <li><a href="#">한국 커피</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">하늘에 커피</a></li>
+                        <li><a href="#">차군 커피</a></li>
+                        <li><a href="#">리버벨</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">디벨로핑룸</a></li>
+                        <li><a href="#">알렉스더커피</a></li>
+                        <li><a href="#">수수커피</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="menuWrap">
+        <div class="lnb_subMenu">
+            <ul>
+                <li><strong><a href="#">전체메뉴</a></strong>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </li>
+                <li><strong><a href="./sub/sub.html">모든커피</a></strong>
+                    <ul>
+                        <li><a href="#">브랜드</a></li>
+                        <li><a href="#">싱글오리진</a></li>
+                        <li><a href="#">블랜드</a></li>
+                    </ul>
+                </li>
+                <li><strong><a href="#">내 입맛 커피</a></strong>
+                    <ul>
+                        <li><a href="#">내 커피 취향테스트</a></li>
+                        <li><a href="#">구독하기</a></li>
+                        <li><a href="#">구독후기</a></li>
+                    </ul>
+                </li>
+                <li><strong><a href="#">커뮤니티</a></strong>
+                    <ul>
+                        <li><a href="#">EVENT / NEWS</a></li>
+                        <li><a href="#">REVIEW</a></li>
+                    </ul>
+                </li>
+                <li><strong><a href="#">고객센터</a></strong>
+                    <ul>
+                        <li><a href="#">NOTICE</a></li>
+                        <li><a href="#">Q & A</a></li>
+                        <li><a href="#">1:1문의</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong><a href="#">ABOUT AS</a></strong>
+                    <ul>
+                        <li><a href="#">BRAND</a></li>
+                        <li><a href="#">입점문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="visual_main">
+        <div class="visual_main_bg">
+            <img src="img/visual_main_bg.jpg" alt="">
+        </div>
+        <div class="visual_main_inner">
+            <div class="visual_main_items">
+                <img src="img/visual_main_items.png" alt="">
+            </div>
+            <div class="visual_main_txt">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="title">
+                                <h1>이번 커피도, 다음 커피도<br>
+                                    내가 좋아하는 맛으로 즐겨요</h1>
+                                <p>다양한 커피 중에서 내 취향 커피만 구독해요. 실패할 걱정 없어요.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                </div>
+                <div class="style_button">
+                    <a href="#">
+                        <button type="button">
+                            내 취향 커피 추천 받기</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="wrap">
+        <section class="best">
+            <div class="title">
+                <h2>BEST</h2>
+                <p>잘 나가는 원두, 여기 다 모았어요.</p>
+            </div>
+            <div class="fade_up" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out">
+                <ul class="tab">
+                    <li class="best on">BEST</li>
+                    <li>달콤쌉사름</li>
+                    <li>묵직/달콤한 여운</li>
+                    <li> 은은하고 편안함</li>
+                    <li>고소함/구수함</li>
+                    <li>상큼한 산미와향</li>
+                </ul>
+
+
+
+                <div class="tab_sheet">
+                    <div class="best_contents on_sheet">
+                        <div class="best_contents01">
+                            <a href="#">
+                                <div class="best_contents01_img img">
+                                    <img src="img/best_01.jpg" alt="best01">
+                                </div>
+
+                                <div class="best_contents01_txt txt">
+                                    <p class="txt01">[콩볶는사람들] 스프링 블렌드</p>
+                                    <p class="txt02">#밀키 & 은은한</p>
+                                    <span class="txt03">12,000원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents02">
+                            <a href="#">
+                                <div class="best_contents02_img img">
+                                    <img src="img/best_02.jpg" alt="best02">
+                                </div>
+
+                                <div class="best_contents02_txt txt">
+                                    <p class="txt01">[영앤도터스] 콜린</p>
+                                    <p class="txt02">#밀키 & 은은한</p>
+                                    <span class="txt03">12,000원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_03.png" alt="영앤도터스">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents03">
+                            <a href="#">
+                                <div class="best_contents03_img img">
+                                    <img src="img/best_03.jpg" alt="best03">
+                                </div>
+                                <div class="best_contents03_txt txt">
+                                    <p class="txt01">[커피몽타주] 비터스윗 라이트 에디션 2</p>
+                                    <p class="txt02">#밀키 & 은은한</p>
+                                    <span class="txt03">12,000원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_02.png" alt="커피몽타주">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents04">
+                            <a href="#">
+                                <div class="best_contents04_img img">
+                                    <img src="img/best_04.jpg" alt="best04">
+                                </div>
+                                <div class="best_contents04_txt txt">
+                                    <p class="txt01">[커피몽타주] 센스 앤 센서빌리티</p>
+                                    <p class="txt02">#밀키 & 은은한</p>
+                                    <span class="txt03">12,000원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_02.png" alt="커피몽타주">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best_contents">
+                        <div class="best_contents01">
+                            <a href="#">
+                                <div class="best_contents01_img img">
+                                    <img src="img/best_05.jpg" alt="best05">
+                                </div>
+                                <div class="best_contents01_txt txt">
+                                    <p class="txt01">[뉴크롭] 인도네시아 만델링 G1 수마트라</p>
+                                    <p class="txt02">#기분 좋은 쓴맛</p>
+                                    <span class="txt03">5,300원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents02">
+                            <a href="#">
+                                <div class="best_contents02_img img">
+                                    <img src="img/best_06.jpg" alt="best06">
+                                </div>
+                                <div class="best_contents02_txt txt">
+                                    <p class="txt01">[뉴크롭] 베트남 로부스타 G1 Wet Polished SC18</p>
+                                    <p class="txt02">#묵직한 바디와 구수한 단맛</p>
+                                    <span class="txt03">2,300원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents03">
+                            <a href="#">
+                                <div class="best_contents03_img img">
+                                    <img src="img/best_07.jpg" alt="best07">
+                                </div>
+                                <div class="best_contents03_txt txt">
+                                    <p class="txt01">[뉴크롭] 과테말라 SHB 안티구아</p>
+                                    <p class="txt02">#스모키함과 좋은 향나무의 아로마</p>
+                                    <span class="txt03">4,500원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents04">
+                            <a href="#">
+                                <div class="best_contents04_img img">
+                                    <img src="img/best_08.jpg" alt="best08">
+                                </div>
+                                <div class="best_contents04_txt txt">
+                                    <p class="txt01">스타 에스프레소</p>
+                                    <p class="txt02">#강렬한 바디와 기분 좋은 쓴맛</p>
+                                    <span class="txt03">3,200원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best_contents">
+                        <div class="best_contents01">
+                            <a href="#">
+                                <div class="best_contents01_img img">
+                                    <img src="img/best_09.jpg" alt="best09">
+                                </div>
+                                <div class="best_contents01_txt txt">
+                                    <p class="txt01">[뉴크롭] 탄자니아 모시 킬리만자로 롬보 AA</p>
+                                    <p class="txt02">#진하고 달콤한 초콜릿의 단맛과 스모키함</p>
+                                    <span class="txt03">5,000원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents02">
+                            <a href="#">
+                                <div class="best_contents02_img img">
+                                    <img src="img/best_10.jpg" alt="best10">
+                                </div>
+                                <div class="best_contents02_txt txt">
+                                    <p class="txt01">[뉴크롭] 우간다 엘곤 찬조 ToH No.2</p>
+                                    <p class="txt02">#기분 좋은 달콤함</p>
+                                    <span class="txt03">4,800원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents03">
+                            <a href="#">
+                                <div class="best_contents03_img img">
+                                    <img src="img/best_11.jpg" alt="best11">
+                                </div>
+                                <div class="best_contents03_txt txt">
+                                    <p class="txt01">[뉴크롭] 콩볶사 콜롬비아 블렌드</p>
+                                    <p class="txt02">#허브의 단맛과 밸런스의 조화</p>
+                                    <span class="txt03">4,500원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents04">
+                            <a href="#">
+                                <div class="best_contents04_img img">
+                                    <img src="img/best_12.jpg" alt="best12">
+                                </div>
+                                <div class="best_contents04_txt txt">
+                                    <p class="txt01">[뉴크롭] 에티오피아 내추럴 예가체프 G4</p>
+                                    <p class="txt02">#기분 좋은 설렘</p>
+                                    <span class="txt03">3,700원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best_contents">
+                        <div class="best_contents01">
+                            <a href="#">
+                                <div class="best_contents01_img img">
+                                    <img src="img/best_13.jpg" alt="best13">
+                                </div>
+                                <div class="best_contents01_txt txt">
+                                    <p class="txt01">스프링 블렌드</p>
+                                    <p class="txt02">#밀크초코 은은함</p>
+                                    <span class="txt03">4,000원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents02">
+                            <a href="#">
+                                <div class="best_contents02_img img">
+                                    <img src="img/best_14.jpg" alt="best14">
+                                </div>
+                                <div class="best_contents02_txt txt">
+                                    <p class="txt01">[뉴크롭] 온두라스 산 안 드레스</p>
+                                    <p class="txt02">#높은 바디감과 초콜릿의 달콤함</p>
+                                    <span class="txt03">4,600원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents03">
+                            <a href="#">
+                                <div class="best_contents03_img img">
+                                    <img src="img/best_15.jpg" alt="best15">
+                                </div>
+                                <div class="best_contents03_txt txt">
+                                    <p class="txt01">[뉴크롭] 엘살바도르 SHG EP 아파네카</p>
+                                    <p class="txt02">#깔끔함과 복숭아의 단맛</p>
+                                    <span class="txt03">4,600원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents04">
+                            <a href="#">
+                                <div class="best_contents04_img img">
+                                    <img src="img/best_16.jpg" alt="best16">
+                                </div>
+                                <div class="best_contents04_txt txt">
+                                    <p class="txt01">[뉴크롭] 브라질 프리미엄 세하도 NY2 FC SC17/18 내추럴</p>
+                                    <p class="txt02">#적절한 바디와 너티함</p>
+                                    <span class="txt03">3,400원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best_contents">
+                        <div class="best_contents01">
+                            <a href="#">
+                                <div class="best_contents01_img img">
+                                    <img src="img/best_17.jpg" alt="best17">
+                                </div>
+                                <div class="best_contents01_txt txt">
+                                    <p class="txt01">[뉴크롭] 인도 몬순 말라바르 AA</p>
+                                    <p class="txt02">#곡물의 고소함과 카라멜의 부드러운 단맛</p>
+                                    <span class="txt03">4,500원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents02">
+                            <a href="#">
+                                <div class="best_contents02_img img">
+                                    <img src="img/best_18.jpg" alt="best18">
+                                </div>
+                                <div class="best_contents02_txt txt">
+                                    <p class="txt01">미미 미떼</p>
+                                    <p class="txt02">#버터의 부드러움</p>
+                                    <span class="txt03">2,800원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents03">
+                            <a href="#">
+                                <div class="best_contents03_img img">
+                                    <img src="img/best_19.jpg" alt="best19">
+                                </div>
+                                <div class="best_contents03_txt txt">
+                                    <p class="txt01">미미 푸리토</p>
+                                    <p class="txt02">#마일드한 바디와 구수함</p>
+                                    <span class="txt03">2,800원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents04">
+                            <a href="#">
+                                <div class="best_contents04_img img">
+                                    <img src="img/best_20.jpg" alt="best20">
+                                </div>
+                                <div class="best_contents04_txt txt">
+                                    <p class="txt01">[뉴크롭] 콩볶사 브라질 블렌드</p>
+                                    <p class="txt02">#밸런스 좋은 견과류</p>
+                                    <span class="txt03">3,700원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best_contents">
+                        <div class="best_contents01">
+                            <a href="#">
+                                <div class="best_contents01_img img">
+                                    <img src="img/best_21.jpg" alt="best21">
+                                </div>
+                                <div class="best_contents01_txt txt">
+                                    <p class="txt01">[뉴크롭] Light 과테말라 SHB 안티구아</p>
+                                    <p class="txt02">#은은한 카라멜향과 옅은 솔잎향</p>
+                                    <span class="txt03">4,500원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents02">
+                            <a href="#">
+                                <div class="best_contents02_img img">
+                                    <img src="img/best_22.jpg" alt="best22">
+                                </div>
+                                <div class="best_contents02_txt txt">
+                                    <p class="txt01">[뉴크롭] Light 케나 AA 키암부</p>
+                                    <p class="txt02">#자몽의 단맛과 풋사과의 상큼함</p>
+                                    <span class="txt03">5,800원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents03">
+                            <a href="#">
+                                <div class="best_contents03_img img">
+                                    <img src="img/best_23.jpg" alt="best23">
+                                </div>
+                                <div class="best_contents03_txt txt">
+                                    <p class="txt01">[뉴크롭] 콩볶사 에티오피아 블렌드</p>
+                                    <p class="txt02">#옅은 산미와 적절한 바디감</p>
+                                    <span class="txt03">4,000원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_contents04">
+                            <a href="#">
+                                <div class="best_contents04_img img">
+                                    <img src="img/best_24.jpg" alt="best24">
+                                </div>
+                                <div class="best_contents04_txt txt">
+                                    <p class="txt01">[뉴크롭] 에티오피아 내추럴 시다모 G4</p>
+                                    <p class="txt02">#과일의 단맛</p>
+                                    <span class="txt03">3,600원</span>
+                                </div>
+                                <div class="best_contents_logo">
+                                    <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                                </div>
+                            </a>
+                            <div class="hover_icon">
+                                <div class="icon">
+                                    <li>
+                                        <img src="img/loupe.jpg" alt="loupe">
+                                    </li>
+                                    <li>
+                                        <img src="img/favorite.jpg" alt="favorite">
+                                    </li>
+                                    <li class="shopping_cart">
+                                        <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#">
+                <div class="read_more01">자세히 보기</div>
+            </a>
+        </section>
+        <section class="new">
+            <div class="title">
+                <h2>NEW</h2>
+                <p>새로운 원두를 즐겨보세요.</p>
+            </div>
+
+            <div class="new_contents fade-up" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out">
+                <div class=" new_contents01">
+                    <a href="#">
+                        <div class=" new_contents01_img img">
+                            <img src=" img/new_01.jpg" alt="new01">
+                        </div>
+
+                        <div class="new_contents01_txt txt">
+                            <p class="txt01">[영앤도터스] 룰라바이</p>
+                            <p class="txt02">#밀키 & 은은한</p>
+                            <span class="txt03">18,000원</span>
+                        </div>
+                        <div class="new_contents_logo">
+                            <img src="img/logo_01.jpg" alt="콩볶는사람들">
+                        </div>
+                    </a>
+                    <div class="hover_icon">
+                        <div class="icon">
+                            <li>
+                                <img src="img/loupe.jpg" alt="loupe">
+                            </li>
+                            <li>
+                                <img src="img/favorite.jpg" alt="favorite">
+                            </li>
+                            <li class="shopping_cart">
+                                <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="new_contents02">
+                    <a href="#">
+                        <div class="new_contents02_img img">
+                            <img src="img/new_02.jpg" alt="new02">
+                        </div>
+
+                        <div class="new_contents02_txt txt">
+                            <p class="txt01">[영앤도터스] 파퓨아뉴기니 모리타</p>
+                            <p class="txt02">#밀키 & 은은한</p>
+                            <span class="txt03">18,000원</span>
+                        </div>
+                        <div class="new_contents_logo">
+                            <img src="img/logo_03.png" alt="영앤도터스">
+                        </div>
+                    </a>
+                    <div class="hover_icon">
+                        <div class="icon">
+                            <li>
+                                <img src="img/loupe.jpg" alt="loupe">
+                            </li>
+                            <li>
+                                <img src="img/favorite.jpg" alt="favorite">
+                            </li>
+                            <li class="shopping_cart">
+                                <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="new_contents03">
+                    <a href="#">
+                        <div class="new_contents03_img img">
+                            <img src="img/new_03.png" alt="new03">
+                        </div>
+                        <div class="new_contents03_txt txt">
+                            <p class="txt01">[하늘에커피] 돌담 in 애월</p>
+                            <p class="txt02">#밀키 & 은은한</p>
+                            <span class="txt03">11,000원</span>
+                        </div>
+                        <div class="new_contents_logo">
+                            <img src="img/logo_04.png" alt="하늘에커피">
+                        </div>
+                    </a>
+                    <div class="hover_icon">
+                        <div class="icon">
+                            <li>
+                                <img src="img/loupe.jpg" alt="loupe">
+                            </li>
+                            <li>
+                                <img src="img/favorite.jpg" alt="favorite">
+                            </li>
+                            <li class="shopping_cart">
+                                <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="new_contents04">
+                    <a href="#">
+                        <div class="new_contents04_img img">
+                            <img src="img/new_04.png" alt="new04">
+                        </div>
+                        <div class="new_contents04_txt txt">
+                            <p class="txt01">[하늘에커피] 하늘에 시그니처 블랜딩</p>
+                            <p class="txt02">#밀키 & 은은한</p>
+                            <span class="txt03">11,500원</span>
+                        </div>
+                        <div class="new_contents_logo">
+                            <img src="img/logo_04.png" alt="하늘에커피">
+                        </div>
+                    </a>
+                    <div class="hover_icon">
+                        <div class="icon">
+                            <li>
+                                <img src="img/loupe.jpg" alt="loupe">
+                            </li>
+                            <li>
+                                <img src="img/favorite.jpg" alt="favorite">
+                            </li>
+                            <li class="shopping_cart">
+                                <img src="img/shopping_cart.jpg" alt="shopping_cart">
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#">
+                <div class="read_more02">
+                    자세히 보기
+                </div>
+            </a>
+        </section>
+    </div>
+    <div class="main_banner">
+        <img src="img/main_banner.jpg" alt="">
+        <div class="txt">
+            <div class="title">
+                <h2>내 입맛에 꼭 맞는 커피로 추천받고 구독하세요</h2>
+                <p>내 취향에 딱 맞는 원두를 추천해요<br>
+                    구독을 시작하고 항상 무료 배송으로 받아보세요.</p>
+            </div>
+            <a href="#">
+                <div class="coffee_recomm">
+                    30초만에 커피 추천받기
+                    <i class="xi-long-arrow-right"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <section class="hot">
+        <div class="title">
+            <h2>2022 <span>HOT</span></h2>
+            <p>다양한 수상경력으로 맛과 품질이 검증도니 로스터리와 함께해요.</p>
+        </div>
+        <div class="hot_wrap">
+            <div class="logo tab">
+                <div class="logo01 on">
+                    <div class="logo01_img img">
+                        <img src="img/logo_05.png" alt="logo05">
+                    </div>
+                    <div class="logo01_txt txt">베르크</div>
+                </div>
+                <div class="logo02">
+                    <div class="logo02_img img">
+                        <img src="img/logo_06.jpg" alt="">
+                    </div>
+                    <div class="logo02_txt txt">수수커피</div>
+                </div>
+                <div class="logo03">
+                    <div class="logo03_img img">
+                        <img src="img/logo_07.png" alt="">
+                    </div>
+                    <div class="logo03_txt txt">알렉스 더 커피</div>
+                </div>
+                <div class="logo04 ">
+                    <div class="logo04_img img">
+                        <img src="img/logo_08.png" alt="">
+                    </div>
+                    <div class="logo04_txt txt">커넥츠</div>
+                </div>
+                <div class="logo05 ">
+                    <div class="logo05_img img">
+                        <img src="img/logo_09.jpg" alt="">
+                    </div>
+                    <div class="logo05_txt txt">펠트</div>
+                </div>
+                <div class="logo06">
+                    <div class="logo06_img img">
+                        <img src="img/logo_10.jpg" alt="">
+                    </div>
+                    <div class="logo06_txt txt">55'커피</div>
+                </div>
+            </div>
+
+            <div class="hot_contents_wrap tab_sheet">
+                <div class="hot_contents on_sheet">
+                    <div class="hot_contents01">
+                        <div class="swiper mySwiper02">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="hot_contents_top">
+                                            <div class="hot_contents_top_img img">
+                                                <img src="img/hot_01.png" alt="hot01">
+                                            </div>
+                                            <div class="hot_contents_top_txt txt">
+                                                <h3>에티오피아 리무 볼렌소</h3>
+                                                <span>초콜릿 & 과일<br>
+                                                    19,000원 250g</span>
+                                                <p>내추럴 프로세싱 특유의 건포도 향미가 선명히 느껴지며, 좋은 클린컵의 부드러운 산미는 오렌지의 향미로 느껴집니다. 부드러운
+                                                    질감과
+                                                    묵직한
+                                                    초콜릿의 단맛이 긴
+                                                    여운을
+                                                    남기는 복합적인 향미와 단맛의 여운이 좋은 커피입니다.</p>
+                                            </div>
+                                            <div class="hot_contents_top_brand brand">
+                                                <div class="hot_contents_top_brand_txt txt">
+                                                    <div class="img">
+                                                        <img src="img/logo_05.png" alt="베르크 로스터스">
+                                                    </div>
+                                                    <div class="name">
+                                                        <span class="txt01">베르크 로스터스</span>
+                                                        <span class="txt02">Roaster`s Note</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide sheet02">
+                                    <a href="#">
+                                        <div class="hot_contents_top">
+                                            <div class="hot_contents_top_img img">
+                                                <img src="img/hot_02.png" alt="hot02">
+                                            </div>
+                                            <div class="hot_contents_top_txt txt">
+                                                <h3>HAUS BLEND</h3>
+                                                <span>묵직한 & 풍부한<br>
+                                                    16,000원 250g
+                                                </span>
+                                                <p>부정적인 맛이 없이 처음부터 끝까지 마시기 편안합니다. 다크 초콜릿의 풍부한 단맛을 느낄 수 있고, 묵직한 바디감과 후미까지
+                                                    길게
+                                                    이어지는
+                                                    진한 커피향을 경험해보세요.</p>
+                                            </div>
+                                            <div class="hot_contents_top_brand brand">
+                                                <div class="hot_contents_top_brand_txt txt">
+                                                    <div class="img">
+                                                        <img src="img/logo_05.png" alt="logo05">
+                                                    </div>
+                                                    <div class="name">
+                                                        <span class="txt01">베르크 로스터스</span>
+                                                        <span class="txt02">Roaster`s Note</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide sheet03">
+                                    <a href="#">
+                                        <div class="hot_contents_top">
+                                            <div class="hot_contents_top_img img">
+                                                <img src="img/hot_02.png" alt="hot02">
+                                            </div>
+                                            <div class="hot_contents_top_txt txt">
+                                                <h3>BABY BLEND</h3>
+                                                <span>깔끔한 & 달콤<br>
+                                                    16,000원
+                                                    250g
+                                                </span>
+                                                <p>탄맛이나 날카로운 신맛이 없이 처음부터 끝까지 먹기 편안하고 화려하지 않은 커피입니다. 고소한 브라운슈가, 캬라멜의 부드러운
+                                                    질감과
+                                                    풍부한
+                                                    단맛을 느낄 수 있어요. 블랙커피와 밀크베리에이션을 동시에 고려했어요.</p>
+                                            </div>
+                                            <div class="hot_contents_top_brand brand">
+                                                <div class="hot_contents_top_brand_txt txt">
+                                                    <div class="img">
+                                                        <img src="img/logo_05.png" alt="logo05">
+                                                    </div>
+                                                    <div class="name">
+                                                        <span class="txt01">베르크 로스터스</span>
+                                                        <span class="txt02">Roaster`s Note</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+
+
+
+                        <div class="hot_contents_bottom">
+
+                            <div class="hot_contents_bottom01">
+                                <a href="#">
+                                    <div class="hot_contents_bottom01_img img">
+                                        <img src="img/hot_01.png" alt="hot01">
+                                    </div>
+                                    <div class="hot_contents_bottom01_txt txt">
+                                        <p> 에티오피아 리무 볼렌소</p>
+                                        <p>초콜릿 & 과일</p>
+                                        <p>19,000원</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="hot_contents_bottom02">
+                                <a href="#">
+                                    <div class="hot_contents_bottom02_img img">
+                                        <img src="img/hot_02.png" alt="hot02">
+                                    </div>
+                                    <div class="hot_contents_bottom02_txt txt">
+                                        <p>HAUS BLEND</p>
+                                        <p>묵직한 & 풍부한 </p>
+                                        <p>16,000원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hot_contents_bottom03">
+                                <a href="#">
+                                    <div class="hot_contents_bottom03_img img">
+                                        <img src="img/hot_03.png" alt="hot03">
+                                    </div>
+                                    <div class="hot_contents_bottom03_txt txt">
+                                        <p>BABY BLEND</p>
+                                        <p>깔끔한 & 달콤 </p>
+                                        <p>16,000원</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hot_contents">
+                    <div class="hot_contents01">
+                        <div class="swiper mySwiper02">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="hot_contents_top">
+                                            <div class="hot_contents_top_img img">
+                                                <img src="img/hot_04.webp" alt="hot04">
+                                            </div>
+                                            <div class="hot_contents_top_txt txt">
+                                                <h3>데일리뷰티 블렌드</h3>
+                                                <span>초콜릿 & 달콤<br>
+                                                    13,000원 200g</span>
+                                                <p>은은하게 퍼지는 산미와 초콜릿의 단맛이 느껴져요</p>
+                                            </div>
+                                            <div class="hot_contents_top_brand brand">
+                                                <div class="hot_contents_top_brand_txt txt">
+                                                    <div class="img">
+                                                        <img src="img/logo_14.webp" alt="수수커피">
+                                                    </div>
+                                                    <div class="name">
+                                                        <span class="txt01">수수커피</span>
+                                                        <span class="txt02">Roaster`s Note</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="hot_contents_top">
+                                            <div class="hot_contents_top_img img">
+                                                <img src="img/hot_05.webp" alt="hot05">
+                                            </div>
+                                            <div class="hot_contents_top_txt txt">
+                                                <h3>모카 1959 CM</h3>
+                                                <span>과일 & 달콤<br>
+                                                    32,000원 200g
+                                                </span>
+                                                <p>과일의 상큼함과 화이트 초콜릿의 단맛이 좋은 커피입니다.</p>
+                                            </div>
+                                            <div class="hot_contents_top_brand brand">
+                                                <div class="hot_contents_top_brand_txt txt">
+                                                    <div class="img">
+                                                        <img src="img/logo_14.webp" alt="수수커피">
+                                                    </div>
+                                                    <div class="name">
+                                                        <span class="txt01">수수커피</span>
+                                                        <span class="txt02">Roaster`s Note</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="hot_contents_top">
+                                            <div class="hot_contents_top_img img">
+                                                <img src="img/hot_06.webp" alt="hot06">
+                                            </div>
+                                            <div class="hot_contents_top_txt txt">
+                                                <h3>모카 돈 엘킨</h3>
+                                                <span>고소 & 꽃향기<br>
+                                                    32,000원
+                                                    200g
+                                                </span>
+                                                <p>마카다미아, 라즈베리, 장미, 티라이크 & 밀크초콜릿의 맛을 느낄 수 있는 커피입니다.</p>
+                                            </div>
+                                            <div class="hot_contents_top_brand brand">
+                                                <div class="hot_contents_top_brand_txt txt">
+                                                    <div class="img">
+                                                        <img src="img/logo_14.webp" alt="수수커피">
+                                                    </div>
+                                                    <div class="name">
+                                                        <span class="txt01">수수커피</span>
+                                                        <span class="txt02">Roaster`s Note</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="hot_contents_bottom tab">
+                            <div class="hot_contents_bottom01 on">
+                                <a href="#">
+                                    <div class="hot_contents_bottom01_img img">
+                                        <img src="img/hot_04.webp" alt="hot04">
+                                    </div>
+                                    <div class="hot_contents_bottom01_txt txt">
+                                        <p>데일리 뷰티 블렌드</p>
+                                        <p>초콜릿 & 달콤</p>
+                                        <p>13,000원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hot_contents_bottom02">
+                                <a href="#">
+                                    <div class="hot_contents_bottom02_img img">
+                                        <img src="img/hot_05.webp" alt="hot05">
+                                    </div>
+                                    <div class="hot_contents_bottom02_txt txt">
+                                        <p>모카 1959 CM</p>
+                                        <p>과일 & 달콤 </p>
+                                        <p>32,000원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hot_contents_bottom03">
+                                <a href="#">
+                                    <div class="hot_contents_bottom03_img img">
+                                        <img src="img/hot_06.webp" alt="hot06">
+                                    </div>
+                                    <div class="hot_contents_bottom03_txt txt">
+                                        <p>모카 돈 엘킨</p>
+                                        <p>고소 & 꽃향기</p>
+                                        <p>32,000원</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hot_contents">
+                    <div class="hot_contents01">
+                        <div class="swiper mySwiper02">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="hot_contents_top ">
+                                        <div class="hot_contents_top_img img">
+                                            <img src="img/hot_07.webp" alt="hot07">
+                                        </div>
+                                        <div class="hot_contents_top_txt txt">
+                                            <h3>인도 바드라 아라비카</h3>
+                                            <span>초콜릿 & 묵직한<br>
+                                                15,000원 200g</span>
+                                            <p>초콜릿의 달콤함과 호두의 고소함의 조화가 묵직한 바디감과 어우러져있는 매력적인 커피입니다.</p>
+                                        </div>
+                                        <div class="hot_contents_top_brand brand">
+                                            <div class="hot_contents_top_brand_txt txt">
+                                                <div class="img">
+                                                    <img src="img/logo_07.png" alt="알렉스더커피">
+                                                </div>
+                                                <div class="name">
+                                                    <span class="txt01">알렉스더커피</span>
+                                                    <span class="txt02">Roaster`s Note</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="hot_contents_top on_sheet">
+                                        <div class="hot_contents_top_img img">
+                                            <img src="img/hot_08.webp" alt="hot08">
+                                        </div>
+                                        <div class="hot_contents_top_txt txt">
+                                            <h3>콜롬비아 엘 파라이소 리치</h3>
+                                            <span>과일 & 달콤<br>
+                                                20,000원 200g
+                                            </span>
+                                            <p>열대과일과 리치의 향이 풍부합니다.
+                                                은은한 산미와 다양한 단맛들이 입을 즐겁게 하는 커피입니다.</p>
+                                        </div>
+                                        <div class="hot_contents_top_brand brand">
+                                            <div class="hot_contents_top_brand_txt txt">
+                                                <div class="img">
+                                                    <img src="img/logo_07.png" alt="logo07">
+                                                </div>
+                                                <div class="name">
+                                                    <span class="txt01">알렉스더커피</span>
+                                                    <span class="txt02">Roaster`s Note</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="hot_contents_top on_sheet">
+                                        <div class="hot_contents_top_img img">
+                                            <img src="img/hot_09.webp" alt="hot09">
+                                        </div>
+                                        <div class="hot_contents_top_txt txt">
+                                            <h3>케냐 구아마 AA</h3>
+                                            <span>달콤 & 상큼<br>
+                                                16,000원
+                                                200g
+                                            </span>
+                                            <p>블랙베리와 체리톤의 향미와 적포도,조청 등의 단맛이 좋은 커피입니다.</p>
+                                        </div>
+                                        <div class="hot_contents_top_brand brand">
+                                            <div class="hot_contents_top_brand_txt txt">
+                                                <div class="img">
+                                                    <img src="img/logo_07.png" alt="알렉스더커피">
+                                                </div>
+                                                <div class="name">
+                                                    <span class="txt01">알렉스더커피</span>
+                                                    <span class="txt02">Roaster`s Note</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+
+
+
+                        <div class="hot_contents_bottom tab">
+                            <div class="hot_contents_bottom01 on">
+                                <div class="hot_contents_bottom01_img img">
+                                    <img src="img/hot_07.webp" alt="hot07">
+                                </div>
+                                <div class="hot_contents_bottom01_txt txt">
+                                    <p>인도 바드라 아라비카</p>
+                                    <p>초콜릿 & 묵직한</p>
+                                    <p>15,000원</p>
+                                </div>
+                            </div>
+                            <div class="hot_contents_bottom02">
+                                <div class="hot_contents_bottom02_img img">
+                                    <img src="img/hot_08.webp" alt="hot08">
+                                </div>
+                                <div class="hot_contents_bottom02_txt txt">
+                                    <p>콜롬비아 엘 파라이소 리치</p>
+                                    <p>과일 & 달콤</p>
+                                    <p>20,000원</p>
+                                </div>
+                            </div>
+                            <div class="hot_contents_bottom03">
+                                <div class="hot_contents_bottom03_img img">
+                                    <img src="img/hot_09.webp" alt="hot09">
+                                </div>
+                                <div class="hot_contents_bottom03_txt txt">
+                                    <p>케냐 구아마 AA</p>
+                                    <p>달콤 & 상큼 </p>
+                                    <p>16,000원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hot_contents">
+                    <div class="hot_contents01">
+                        <div class="swiper mySwiper02">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="hot_contents_top ">
+                                        <div class="hot_contents_top_img img">
+                                            <img src="img/hot_10.webp" alt="hot10">
+                                        </div>
+                                        <div class="hot_contents_top_txt txt">
+                                            <h3>케냐 구아마 AA</h3>
+                                            <span>고소 & 묵직한<br>
+                                                12,000원 200g</span>
+                                            <p>견과류의 고소함을 베이스로 깊은 바디감이 잘 어울리는 균형감이 좋은 블렌드입니다.</p>
+                                        </div>
+                                        <div class="hot_contents_top_brand brand">
+                                            <div class="hot_contents_top_brand_txt txt">
+                                                <div class="img">
+                                                    <img src="img/logo_08.png" alt="커넥츠커피">
+                                                </div>
+                                                <div class="name">
+                                                    <span class="txt01">커넥츠커피</span>
+                                                    <span class="txt02">Roaster`s Note</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="hot_contents_top on_sheet">
+                                        <div class="hot_contents_top_img img">
+                                            <img src="img/hot_11.webp" alt="hot11">
+                                        </div>
+                                        <div class="hot_contents_top_txt txt">
+                                            <h3>발렌타인</h3>
+                                            <span>쌉쌀 & 묵직한<br>
+                                                13,000원 200g
+                                            </span>
+                                            <p>다크 초콜릿의 쌉싸름함과 단맛이 뛰어나고, 뒤에서 느껴지는 스모크함이 개성 있게 느껴지는 블렌드입니다.</p>
+                                        </div>
+                                        <div class="hot_contents_top_brand brand">
+                                            <div class="hot_contents_top_brand_txt txt">
+                                                <div class="img">
+                                                    <img src="img/logo_08.png" alt="커넥츠커피">
+                                                </div>
+                                                <div class="name">
+                                                    <span class="txt01">커넥츠커피</span>
+                                                    <span class="txt02">Roaster`s Note</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="hot_contents_top on_sheet">
+                                        <div class="hot_contents_top_img img">
+                                            <img src="img/hot_12.webp" alt="hot12">
+                                        </div>
+                                        <div class="hot_contents_top_txt txt">
+                                            <h3>브라이트</h3>
+                                            <span>상큼 & 부드러운<br>
+                                                14,000원
+                                                200g
+                                            </span>
+                                            <p>복숭아, 살구와 같은 핵과의 향미와 단맛이 잘 표현되며, 부담스럽지 않은 산미가 조화로운 스페셜티 블렌드입니다.</p>
+                                        </div>
+                                        <div class="hot_contents_top_brand brand">
+                                            <div class="hot_contents_top_brand_txt txt">
+                                                <div class="img">
+                                                    <img src="img/logo_08.png" alt="커넥츠커피">
+                                                </div>
+                                                <div class="name">
+                                                    <span class="txt01">커넥츠커피</span>
+                                                    <span class="txt02">Roaster`s Note</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="hot_contents_bottom tab">
+                            <div class="hot_contents_bottom01 on">
+                                <div class="hot_contents_bottom01_img img">
+                                    <img src="img/hot_10.webp" alt="hot10">
+                                </div>
+                                <div class="hot_contents_bottom01_txt txt">
+                                    <p>뉴커먼</p>
+                                    <p>고소 & 묵직한</p>
+                                    <p>12,000원</p>
+                                </div>
+                            </div>
+                            <div class="hot_contents_bottom02">
+                                <div class="hot_contents_bottom02_img img">
+                                    <img src="img/hot_11.webp" alt="hot11">
+                                </div>
+                                <div class="hot_contents_bottom02_txt txt">
+                                    <p>발렌타인</p>
+                                    <p>쌉쌀 & 묵직한 </p>
+                                    <p>13,000원</p>
+                                </div>
+                            </div>
+                            <div class="hot_contents_bottom03">
+                                <div class="hot_contents_bottom03_img img">
+                                    <img src="img/hot_12.webp" alt="hot12">
+                                </div>
+                                <div class="hot_contents_bottom03_txt txt">
+                                    <p>브라이트</p>
+                                    <p>상큼 & 부드러운</p>
+                                    <p>14,000원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hot_contents">
+                    <div class="hot_contents01">
+                        <div class="swiper mySwiper02">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="hot_contents_top ">
+                                        <div class="hot_contents_top_img img">
+                                            <img src="img/hot_13.webp" alt="hot13">
+                                        </div>
+                                        <div class="hot_contents_top_txt txt">
+                                            <h3>Seasonal Blend
+                                            </h3>
+                                            <span>상큼 & 깔끔한<br>
+                                                15,000원 200g</span>
+                                            <p>신선한 과일의 달콤함과 상큼함, 카라멜의 단맛이 조화를 이룬 실크처럼 부드러운 감촉의 계절 블렌드 입니다.</p>
+                                        </div>
+                                        <div class="hot_contents_top_brand brand">
+                                            <div class="hot_contents_top_brand_txt txt">
+                                                <div class="img">
+                                                    <img src="img/logo_09.jpg" alt="펠트">
+                                                </div>
+                                                <div class="name">
+                                                    <span class="txt01">FELT</span>
+                                                    <span class="txt02">Roaster`s Note</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="hot_contents_top on_sheet">
+                                        <div class="hot_contents_top_img img">
+                                            <img src="img/hot_14.webp" alt="hot14">
+                                        </div>
+                                        <div class="hot_contents_top_txt txt">
+                                            <h3>Classic Blend</h3>
+                                            <span>밸런스 & 깔끔한<br>
+                                                13,000원 200g
+                                            </span>
+                                            <p>밀크 초콜릿의 단맛, 견과류의 고소함, 은은한 산미가 균형을 이룬 복합적인 향미를 지닌 블렌드입니다.</p>
+                                        </div>
+                                        <div class="hot_contents_top_brand brand">
+                                            <div class="hot_contents_top_brand_txt txt">
+                                                <div class="img">
+                                                    <img src="img/logo_09.jpg" alt="펠트">
+                                                </div>
+                                                <div class="name">
+                                                    <span class="txt01">FELT</span>
+                                                    <span class="txt02">Roaster`s Note</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="hot_contents_top on_sheet">
+                                        <div class="hot_contents_top_img img">
+                                            <img src="img/hot_15.webp" alt="hot15">
+                                        </div>
+                                        <div class="hot_contents_top_txt txt">
+                                            <h3>Classic Plus Blend</h3>
+                                            <span>쌉쌀 & 묵직한<br>
+                                                13,000원
+                                                200g
+                                            </span>
+                                            <p>다크 초콜릿의 풍미, 카카오닙스의 부드러운 쓴맛, 풍부한 질감을 느낄 수 있습니다.</p>
+                                        </div>
+                                        <div class="hot_contents_top_brand brand">
+                                            <div class="hot_contents_top_brand_txt txt">
+                                                <div class="img">
+                                                    <img src="img/logo_09.jpg" alt="펠트">
+                                                </div>
+                                                <div class="name">
+                                                    <span class="txt01">FELT</span>
+                                                    <span class="txt02">Roaster`s Note</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="hot_contents_bottom tab">
+                            <div class="hot_contents_bottom01 on">
+                                <div class="hot_contents_bottom01_img img">
+                                    <img src="img/hot_13.webp" alt="hot13">
+                                </div>
+                                <div class="hot_contents_bottom01_txt txt">
+                                    <p>Seasonal Blend</p>
+                                    <p>상큼 & 깔끔한</p>
+                                    <p>15,000원</p>
+                                </div>
+                            </div>
+                            <div class="hot_contents_bottom02">
+                                <div class="hot_contents_bottom02_img img">
+                                    <img src="img/hot_14.webp" alt="hot14">
+                                </div>
+                                <div class="hot_contents_bottom02_txt txt">
+                                    <p>Classic Blend</p>
+                                    <p>밸런스 & 깔끔한 </p>
+                                    <p>13,000원</p>
+                                </div>
+                            </div>
+                            <div class="hot_contents_bottom03">
+                                <div class="hot_contents_bottom03_img img">
+                                    <img src="img/hot_15.webp" alt="hot15">
+                                </div>
+                                <div class="hot_contents_bottom03_txt txt">
+                                    <p>Classic Plus Blend</p>
+                                    <p>쌉쌀 & 묵직한</p>
+                                    <p>13,000원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hot_contents">
+                    <div class="hot_contents01">
+                        <div class="swiper mySwiper02">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="hot_contents_top ">
+                                        <div class="hot_contents_top_img img">
+                                            <img src="img/hot_16.webp" alt="hot16">
+                                        </div>
+                                        <div class="hot_contents_top_txt txt">
+                                            <h3>44도 블렌드</h3>
+                                            <span>달콤 & 밸런스<br>
+                                                9,000원 200g</span>
+                                            <p>바디감과 달콤함이 적절한 밸런스에 초점을 두며, 초콜릿티와 호두같은 고소함이 매력적인 블렌드입니다. </p>
+                                        </div>
+                                        <div class="hot_contents_top_brand brand">
+                                            <div class="hot_contents_top_brand_txt txt">
+                                                <div class="img">
+                                                    <img src="img/logo_15.webp" alt="55도 커피로스터스">
+                                                </div>
+                                                <div class="name">
+                                                    <span class="txt01">55도 커피</span>
+                                                    <span class="txt02">Roaster`s Note</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="hot_contents_top on_sheet">
+                                        <div class="hot_contents_top_img img">
+                                            <img src="img/hot_17.webp" alt="hot17">
+                                        </div>
+                                        <div class="hot_contents_top_txt txt">
+                                            <h3>과테말라 엘 소코로 레드버번 풀리워시드</h3>
+                                            <span>밸런스 & 달콤<br>
+                                                15,000원 200g
+                                            </span>
+                                            <p>은은한 과일의 부드러움과 갈색설탕의 단맛과 고소함의 밸런스가 좋은 커피입니다.</p>
+                                        </div>
+                                        <div class="hot_contents_top_brand brand">
+                                            <div class="hot_contents_top_brand_txt txt">
+                                                <div class="img">
+                                                    <img src="img/logo_15.webp" alt="55도 커피로스터스">
+                                                </div>
+                                                <div class="name">
+                                                    <span class="txt01">55도 커피</span>
+                                                    <span class="txt02">Roaster`s Note</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="hot_contents_top on_sheet">
+                                        <div class="hot_contents_top_img img">
+                                            <img src="img/hot_18.webp" alt="hot18">
+                                        </div>
+                                        <div class="hot_contents_top_txt txt">
+                                            <h3>66도 블렌드</h3>
+                                            <span>밸런스 & 깔끔한<br>
+                                                10,000원
+                                                200g
+                                            </span>
+                                            <p>초콜릿처럼 달콤하며, 밸런스가 좋은 커피입니다.</p>
+                                        </div>
+                                        <div class="hot_contents_top_brand brand">
+                                            <div class="hot_contents_top_brand_txt txt">
+                                                <div class="img">
+                                                    <img src="img/logo_15.webp" alt="55도 커피로스터스">
+                                                </div>
+                                                <div class="name">
+                                                    <span class="txt01">55도 커피</span>
+                                                    <span class="txt02">Roaster`s Note</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="hot_contents_bottom tab">
+                            <div class="hot_contents_bottom01 on">
+                                <div class="hot_contents_bottom01_img img">
+                                    <img src="img/hot_16.webp" alt="hot16">
+                                </div>
+                                <div class="hot_contents_bottom01_txt txt">
+                                    <p>44도 블렌드</p>
+                                    <p>달콤 & 밸런스</p>
+                                    <p>9,000원</p>
+                                </div>
+                            </div>
+                            <div class="hot_contents_bottom02">
+                                <div class="hot_contents_bottom02_img img">
+                                    <img src="img/hot_17.webp" alt="hot17">
+                                </div>
+                                <div class="hot_contents_bottom02_txt txt">
+                                    <p>과테말라 엘 소코로 레드버번 풀리워시드</p>
+                                    <p>밸런스 & 달콤 </p>
+                                    <p>15,000원</p>
+                                </div>
+                            </div>
+                            <div class="hot_contents_bottom03">
+                                <div class="hot_contents_bottom03_img img">
+                                    <img src="img/hot_18.webp" alt="hot18">
+                                </div>
+                                <div class="hot_contents_bottom03_txt txt">
+                                    <p>66도 블렌드</p>
+                                    <p>밸런스 & 깔끔한</p>
+                                    <p>10,000원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="roastery">
+            <div class="roastery01">
+                <h3>ROASTERY</h3>
+                <p>더 다양한 로스테리<br> 원두를 즐겨뵤세요.</p>
+            </div>
+            <div class="swiper mySwiper01">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img">
+                                <img src="img/logo_06.jpg" alt="roastery01">
+                            </div>
+                            <div class="txt">55˚ 커피</div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img">
+                                <img src="img/logo_07.png" alt="roastery02">
+                            </div>
+                            <div class="txt">알렉스더커피</div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img">
+                                <img src="img/logo_12.png" alt="roastery03">
+                            </div>
+                            <div class="txt">웨이브온 커피</div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img">
+                                <img src="img/logo_13.png" alt="roastery04">
+                            </div>
+                            <div class="txt">폰트커피</div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img">
+                                <img src="img/logo_08.png" alt="roastery05">
+                            </div>
+                            <div class="txt">커넥츠커피</div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img">
+                                <img src="img/logo_11.png" alt="roastery06">
+                            </div>
+                            <div class="txt">차군커피</div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img">
+                                <img src="img/logo_01.jpg" alt="roastery06">
+                            </div>
+                            <div class="txt">차군커피</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- <div class="logo">
+                <ul>
+                    <li>
+                        <div class="img">
+                            <img src="img/logo_06.jpg" alt="roastery01">
+                        </div>
+                        <div class="txt">55˚ 커피</div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="img/logo_07.png" alt="roastery02">
+                        </div>
+                        <div class="txt">알렉스더커피</div>
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="img/logo_13.png" alt="roastery04">
+                        </div>
+                        <div class="txt">폰트커피</div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="img/logo_08.png" alt="roastery05">
+                        </div>
+                        <div class="txt">커넥츠커피</div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="img/logo_11.png" alt="roastery06">
+                        </div>
+                        <div class="txt">차군커피</div>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+    </section>
+
+    <div class="sub_banner">
+        <div class="sub_banner_inner scroll_el">
+            <div class="sub_banner_txt origin position_left delay_00">
+                <h2>Good coffee collector</h2>
+                <p>코케는<br>
+                    코케는
+                    좋은 커피를 수집하는 Good Coffee Collector 입니다.<br><br>
+
+                    당신의 기록이 차곡차곡 쌓여<br>
+                    취향이 되는 즐거움을 함께 하며,<br>
+                    커피로 당신의 일상에<br>
+                    특별함이 더해지는 순간을 기대합니다.
+                </p>
+            </div>
+
+
+            <section class="season_concept origin position_right delay_01">
+                <div class="season_concept_movie">
+                    <iframe width="628" height="352" src="https://www.youtube.com/embed/WF4jHGcZtT0"
+                        title="또 다른 나를 찾는 쇼핑, ㅌㅌ#(30s full ver.)" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+
+
+            <!--
+            <section class="movieBg">
+                <h3>롯데월드의 계절을 담다</h3>
+                <p>포토그래퍼의 시선으로 담아본 롯데월드의 아름다운 모습을 영상으로 만나보세요! </p>
+                <div class="btn">
+                    <i class="xi-pause"></i>
+                    <i class="xi-play"></i>
+                </div>
+
+
+                <div id="bgndVideo" class="player"></div>
+            </section>
+            -->
+
+        </div>
+    </div>
+
+
+
+    <section class="review">
+        <div class="title">
+            <h2>REVIEW</h2>
+            <p>코케 고객님들의 소중한 리뷰를 읽어보세요.</p>
+        </div>
+        <div class="review_contents">
+            <div class="swiper mySwiper03">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="review_contents_img01 img">
+                                <img src="img/review_01.jpg" alt="review01">
+
+                            </div>
+                            <div class="best_review">
+                                <div class="label">
+                                    <span>
+                                        Best<br>
+                                        Review
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="review_contents_txt01 txt">
+                                <p class="subject">[영앤도터스] 룰라바이</p>
+                                <div class="etc">
+                                    <span>eddf***님의 후기</span>
+                                    <span class="star"> <img src="img/star.png" alt="star"></span>
+                                </div>
+                                <p class="conts">다양한 원두를 입맛대로 골라 먹을 수 있어 정말 좋아요~</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="review_contents_img03 img">
+                                <img src="img/review_03.jpg" alt="review03">
+                            </div>
+                            <div class="best_review">
+                                <div class="label">
+                                    <span>
+                                        Best<br>
+                                        Review
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="review_contents_txt02 txt">
+                                <p class="subject">[영앤도터스] 룰라바이</p>
+                                <div class="etc">
+                                    <span>eddf***님의 후기</span>
+                                    <span class="star"> <img src="img/star.png" alt="star"></span>
+                                </div>
+                                <p class="conts">다양한 원두를 입맛대로 골라 먹을 수 있어 정말 좋아요~</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="review_contents_img03 img">
+                                <img src="img/review_03.jpg" alt="review03">
+                            </div>
+                            <div class="best_review">
+                                <div class="label">
+                                    <span>
+                                        Best<br>
+                                        Review
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="review_contents_txt03 txt">
+                                <p class="subject">[영앤도터스] 룰라바이</p>
+                                <div class="etc">
+                                    <span>eddf***님의 후기</span>
+                                    <span class="star"> <img src="img/star.png" alt="star"></span>
+                                </div>
+                                <p class="conts">다양한 원두를 입맛대로 골라 먹을 수 있어 정말 좋아요~</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="review_contents_img04 img">
+                                <img src="img/review_04.jpg" alt="review04">
+                            </div>
+                            <div class="best_review">
+                                <div class="label">
+                                    <span>
+                                        Best<br>
+                                        Review
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="review_contents_txt04 txt">
+                                <p class="subject">[영앤도터스] 룰라바이</p>
+                                <div class="etc">
+                                    <span>eddf***님의 후기</span>
+                                    <span class="star"> <img src="img/star.png" alt="star"></span>
+                                </div>
+                                <p class="conts">다양한 원두를 입맛대로 골라 먹을 수 있어 정말 좋아요~</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+
+
+            <!--
+            <ul>
+                <li>
+                   
+                </li>
+                <li>
+                    <div class="review_contents_img02 img">
+                        <img src="img/review_02.jpg" alt="review02">
+                    </div>
+                    <div class="review_contents_txt02 txt">
+                        <p class="subject">[영앤도터스] 룰라바이</p>
+                        <div class="etc">
+                            <span>eddf***님의 후기</span>
+                            <span></span>
+                        </div>
+                        <p class="conts">다양한 원두를 입맛대로 골라 먹을 수 있어 정말 좋아요~</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="review_contents_img03 img">
+                        <img src="img/review_03.jpg" alt="review03">
+                    </div>
+                    <div class="review_contents_txt03 txt">
+                        <p class="subject">[영앤도터스] 룰라바이</p>
+                        <div class="etc">
+                            <span>eddf***님의 후기</span>
+                            <span></span>
+                        </div>
+                        <p class="conts">다양한 원두를 입맛대로 골라 먹을 수 있어 정말 좋아요~</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="review_contents_img04 img">
+                        <img src="img/review_04.jpg" alt="review04">
+                    </div>
+                    <div class="review_contents_txt04 txt">
+                        <p class="subject">[영앤도터스] 룰라바이</p>
+                        <div class="etc">
+                            <span>eddf***님의 후기</span>
+                            <span></span>
+                        </div>
+                        <p class="conts">다양한 원두를 입맛대로 골라 먹을 수 있어 정말 좋아요~</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        -->
+    </section>
+
+
+    <div class="footerWrap">
+        <div class="footer_top">
+            <div class="footer_top_inner">
+                <ul class="list">
+                    <li class="list01">
+                        <p class="cs_center">cs center</p>
+                        <h2>070-4647-1868</h2>
+                        <p class="opening_hours">오전 10:00 ~ 오후 7:00<br>
+                            점심시간 : 오후 12:00 ~ 2:00<br>
+                            토 / 일 / 공휴일 휴무</p>
+                    </li>
+
+                    <li class="list02">
+                        <p class="store_guide">store_guide</p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/sevice_center.png" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <div class="txt01">HELP</div>
+                                        <button>고객센터</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/delivery_tracking.png" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <div class="txt01">ORDER</div>
+                                        <button>배송조회</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/product_inquiry.png" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <div class="txt01">Q & A</div>
+                                        <button>상품문의</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/product_review.png" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <div class="txt01">REVIEW</div>
+                                        <button>상품후기</button>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list03">
+                        <p class="return">return · exchange</p>
+                        <ul>
+                            <li class="
+                            shipping">배송/택배</li>
+                            <li class="
+                            exchange">교환/반품</li>
+                        </ul>
+                        <div class="parcel">
+                            <p>택배 : 로젠택배 : 1588-9988<br>
+                                월~금 08:00~18:00 / 토 09:00 ~ 13:00</p>
+                            <a href="#">
+                                <button>택배사 바로가기</button></a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="footer_lnb">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">AGREEMENT</a></li>
+                    <li class="privacy"><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">STORE GUIDE</a></li>
+                    <li><a href="#">CS CENTER</a></li>
+                </ul>
+
+
+            </div>
+        </div>
+        <div class="footer_middle">
+            <div class="footer_middle_inner">
+                <div class="footer_middle_left">
+                    (주)컨슈머브릿지 / 대표: 신재현, 박성환 / 개인정보보호책임자: 신재현 / 사업자등록번호: 713-86-01467 / 통신판매업신고번호: 제2021-서울강남-02469호
+                    사업장소재지: 서울 강남구 테헤란로2길 27 패스트파이브 빌딩 9층 915호
+                    주식회사 컨슈머브릿지는 전자상거래 등에서의 소비자보호에 관한 법률에 따른 통신판매중개자로서 중개하는 통신판매에 관여하여서는 통신판매의 당사자가 아니며
+                    상품의 주문, 배송 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.
+                </div>
+                <div class="footer_middle_right">
+                    <img src="img/logo.jpg" alt="로고">
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            ⓒ 2021 Consumer Bridge, Inc. All rights reserved
+        </div>
+    </div>
+
+    <div class="quick_menu">
+        <div class="search">
+            <a href="#">
+                <img src="img/btn_hd_search.png" alt="검색">
+            </a>
+        </div>
+
+        <div class="shopping_basket">
+            <a href="#">
+                <img src="img/shopping_basket.jpg" alt="장바구니">
+            </a>
+        </div>
+
+        <div class="delivery_tracking">
+            <a href="#">
+                <img src="img/delivery_tracking.png" alt="배송조회">
+            </a>
+        </div>
+
+        <div class="recently_viewed">
+            <a href="#">
+                <img src="img/recently_viewed.jpg" alt="최근본상품">
+            </a>
+        </div>
+
+        <div class="goTop">
+            <i class="xi-angle-up-thin"></i>
+        </div>
+        <div class="goBottom">
+            <i class="xi-angle-down-thin"></i>
+        </div>
+    </div>
+
+    <div class="quick_menu_hover">
+        <div class="search_hover">검색</div>
+        <div class="shopping_basket_hover">장바구니(1)</div>
+        <div class="delivery_tracking_hover">배송조회</div>
+        <div class="recently_viewed_hover">최근 본 상품</div>
+    </div>
+
+
+</body>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- <script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script> -->
+
+<script>
+    var swiper = new Swiper(".mySwiper01", {
+        slidesPerView: 6,
+        spaceBetween: 5,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper02", {
+        slidesPerView: 1,
+        spaceBetween: 5,
+        pagination: {
+            el: ".swiper-pagination",
+
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+
+
+<!-- <script>
+    var swiper = new Swiper(".mySwiper03", {
+        slidesPerView: 4,
+        spaceBetween: 5,
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script> -->
+
+
+<script>
+    var swiper = new Swiper(".mySwiper04", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const searchBox = document.querySelector("#search_box");
+        const searchForm = document.querySelector("#search_form");
+
+        searchBox.addEventListener("mouseenter", () => {
+            searchForm.setAttribute("placeholder", "SEARCH");
+        });
+
+        searchBox.addEventListener("blur", () => {
+            searchForm.setAttribute("placeholder", "");
+        });
+    });
+</script>
+
+<script>
+    $(window).scroll(function () {
+        var position = $(window).scrollTop();
+        if (position > 106) {
+            $(".headerWrap").addClass('fix');
+            $(".brand_search").addClass('position');
+            $(".logoBox").addClass('border');
+            $(".headerWrap").addClass('border');
+            $(".menuWrap").addClass('position');
+        } else if (position < 106) {
+            $(".logoBox").removeClass('border');
+            $(".headerWrap").removeClass('fix');
+            $(".brand_search").removeClass('position');
+            $(".headerWrap").removeClass('border');
+            $(".menuWrap").removeClass('position');
+        }
+    });
+</script>
+<script>
+    $(function () {
+        let tab = $(".best .tab li");
+        let sheet = $(".best .tab_sheet > div");
+
+        tab.click(function () {
+            let target = $(this);
+            let i = target.index();
+
+            tab.removeClass("on");
+            tab.eq(i).addClass("on");
+
+            sheet.removeClass("on_sheet");
+            sheet.eq(i).addClass("on_sheet");
+        });
+    });
+
+</script>
+
+
+
+
+
+<script>
+    //메인 애니메이션
+    AOS.init({
+        disable: 'phone',// accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        once: false, // whether animation should happen only once - while scrolling down
+        /*disable: function() {
+            var maxWidth = 783;
+            return window.innerWidth < maxWidth;
+        }*/
+    });
+
+    $(window).resize(function () {
+        //메인 애니메이션
+        AOS.init({
+            disable: 'phone',// accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            once: false, // whether animation should happen only once - while scrolling down
+        });
+    });
+</script>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const plus = document.querySelectorAll(".shopping_cart");
+        let resultElement = document.querySelector(".count");
+        let number = resultElement.innerText;
+
+        plus.forEach(function (value) {
+            value.addEventListener("click", () => {
+                number = parseInt(number) + 1;
+                resultElement.innerText = number;
+            });
+        });
+    });
+</script>
+
+
+<script>
+
+</script>
+
+<!--
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        let mainImg = document.querySelector(".hot_contents_top div >img");
+        let thumImg = document.querySelectorAll(".hot_contents_bottom div >img");
+
+        for (let i = 0; i < thumImg.length; i++) {
+            thumImg[i].onclick = mainBox;
+        }
+
+        function mainBox() {
+            let newImg = this.src;
+            mainImg.setAttribute("src", newImg);
+        }
+    });
+</script>-->
+
+<script>
+    $(function () {
+        let tab = $(".hot .hot_wrap .logo > div");
+        let sheet = $(".hot_contents_wrap > div");
+
+        tab.click(function () {
+            let target = $(this);
+            let i = target.index();
+
+            tab.removeClass("on");
+            tab.eq(i).addClass("on");
+
+            sheet.removeClass("on_sheet");
+            sheet.eq(i).addClass("on_sheet");
+        });
+    });
+</script>
+
+
+<script>
+    $(window).load(function () {
+        $(function () {
+            $('.quick_menu div').hover(function () {
+                $('.quick_menu_hover div').fadeIn();
+            }, function () {
+                $('.quick_menu_hover div').fadeOut();
+            });
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        //TOP 버튼
+        $('.goTop').fadeOut();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 450) {
+                $('.goTop').fadeIn();
+            } else {
+                $('.goTop').fadeOut();
+            }
+        });
+        $('.goTop').click(function () {
+            $('html, body').animate({ scrollTop: 0 }, 300);
+            return false;
+        });
+    });
+    var scrollHeight = $(document).height();
+
+    $(document).ready(function () {
+        //TOP 버튼
+        $('.goBottom').fadeOut();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 450) {
+                $('.goBottom').fadeIn();
+            } else {
+                $('.goBottom').fadeOut();
+            }
+        });
+
+        $('.goBottom').click(function () {
+            $('html, body').animate({ scrollTop: scrollHeight }, 300);
+            return false;
+        });
+    });
+
+</script>
+<script>
+    /* product&event ScrollMagic */
+    const scrollEls = document.querySelectorAll(".scroll_el");
+
+    scrollEls.forEach((scrollEl) => {
+        new ScrollMagic.Scene({
+            triggerElement: scrollEl, //감지해야할 대상
+            triggerHook: 0.7, //감지 위치
+        })
+            .setClassToggle(scrollEl, "show")
+            .addTo(new ScrollMagic.Controller());
+    });
+
+</script>
+
+
+
+<script>
+    // $(function () {
+    //     let btn = $('.lnb .btn');
+    //     let list = $('.list');
+
+    //     btn.click(function () {
+    //         list.slideToggle('fast');
+    //     });
+    // });
+
+
+
+    $(function () {
+        let btn = $('.lnb .brand_list');
+        let list = $('.brand_search');
+
+        btn.click(function () {
+            $(".logoBox").addClass('border');
+            list.slideToggle('fast');
+            $(".menuWrap").css('display', 'none');
+        });
+    });
+
+
+
+
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".quick_menu > div").hover(function () {
+            $(".quick_menu_hover > div").css('display', 'block');
+        }, function () {
+            $(".quick_menu_hover > div").css('display', 'none');
+        })
+    });
+</script>
+<script>
+
+    $(document).ready(function () {
+        $("#menuBtn").mouseover(function () {
+            $(".menuWrap").slideDown(200)
+            $(".brand_search").css('display', 'none');
+        });
+        $("#menuBtn").click(function () {
+            $(".menuWrap").slideUp(200)
+        });
+    });
+
+</script>
+
+
+</html>

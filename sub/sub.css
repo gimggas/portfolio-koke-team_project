@@ -550,7 +550,6 @@ body {
   padding: 14px 10px;
   border: 1px solid #cccccc;
   float: left;
-
   margin-right: 5px;
   margin-bottom: 5px;
   cursor: pointer;
@@ -668,6 +667,7 @@ body {
   margin-bottom: 5px;
   border-radius: 50%;
   background-color: #999999;
+  cursor: pointer;
 }
 
 .items_coffees li .hover_icon > div:last-child {
@@ -1037,4 +1037,30 @@ body {
 .clicked {
   border: 2px solid #ff6c57;
   color: #ff6c57;
+}
+
+#wrap1 {
+  position: relative;
+  height: 500px;
+}
+
+[data-group] {
+  transition: 0.3s ease;
+  width: 100px;
+  height: 150px;
+  display: block;
+  border: 1px solid gray;
+  border-radius: 15px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.show {
+  transition: 0.3s ease;
+  opacity: 1;
+}
+
+.hide {
+  transition: 0.2s ease;
+  opacity: 0;
 }

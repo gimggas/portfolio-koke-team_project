@@ -84,18 +84,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// quick_menu
-$(window).load(function () {
-  $(function () {
-    $(".quick_menu div").hover(
-      function () {
-        $(".quick_menu_hover div").fadeIn();
-      },
-      function () {
-        $(".quick_menu_hover div").fadeOut();
-      }
-    );
-  });
+$(document).ready(function () {
+  $(".quick_menu > div").hover(
+    function () {
+      $(".quick_menu_hover > div").css("display", "block");
+    },
+    function () {
+      $(".quick_menu_hover > div").css("display", "none");
+    }
+  );
 });
 
 $(function () {

@@ -22,7 +22,9 @@
     <script>
         AOS.init();
     </script>
-
+    <script src="js/hangul.js"></script>
+    <script
+        id="gatsby-script-loader">/*<![CDATA[*/window.pagePath = "/javascript-category-filter"; window.___webpackCompilationHash = "6424240f8b8bc8c43b28";/*]]>*/</script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
@@ -204,6 +206,7 @@
         </div>
     </div>
 
+
     <div class="menuWrap">
         <div class="lnb_subMenu">
             <ul>
@@ -323,7 +326,7 @@
                 <div class="tab_sheet">
                     <div class="best_contents on_sheet">
                         <div class="best_contents01">
-                            <a href="#">
+                            <a href="detail/detail.html">
                                 <div class="best_contents01_img img">
                                     <img src="img/best_01.jpg" alt="best01">
                                 </div>
@@ -1219,7 +1222,8 @@
                                                 <h3>에티오피아 리무 볼렌소</h3>
                                                 <span>초콜릿 & 과일<br>
                                                     19,000원 250g</span>
-                                                <p>내추럴 프로세싱 특유의 건포도 향미가 선명히 느껴지며, 좋은 클린컵의 부드러운 산미는 오렌지의 향미로 느껴집니다. 부드러운
+                                                <p>내추럴 프로세싱 특유의 건포도 향미가 선명히 느껴지며, 좋은 클린컵의 부드러운 산미는 오렌지의 향미로 느껴집니다.
+                                                    부드러운
                                                     질감과
                                                     묵직한
                                                     초콜릿의 단맛이 긴
@@ -1251,7 +1255,8 @@
                                                 <span>묵직한 & 풍부한<br>
                                                     16,000원 250g
                                                 </span>
-                                                <p>부정적인 맛이 없이 처음부터 끝까지 마시기 편안합니다. 다크 초콜릿의 풍부한 단맛을 느낄 수 있고, 묵직한 바디감과 후미까지
+                                                <p>부정적인 맛이 없이 처음부터 끝까지 마시기 편안합니다. 다크 초콜릿의 풍부한 단맛을 느낄 수 있고, 묵직한 바디감과
+                                                    후미까지
                                                     길게
                                                     이어지는
                                                     진한 커피향을 경험해보세요.</p>
@@ -1282,7 +1287,8 @@
                                                     16,000원
                                                     250g
                                                 </span>
-                                                <p>탄맛이나 날카로운 신맛이 없이 처음부터 끝까지 먹기 편안하고 화려하지 않은 커피입니다. 고소한 브라운슈가, 캬라멜의 부드러운
+                                                <p>탄맛이나 날카로운 신맛이 없이 처음부터 끝까지 먹기 편안하고 화려하지 않은 커피입니다. 고소한 브라운슈가, 캬라멜의
+                                                    부드러운
                                                     질감과
                                                     풍부한
                                                     단맛을 느낄 수 있어요. 블랙커피와 밀크베리에이션을 동시에 고려했어요.</p>
@@ -2470,7 +2476,7 @@
         spaceBetween: 5,
         pagination: {
             el: ".swiper-pagination",
-
+            clickable: true,
         },
         navigation: {
             nextEl: ".swiper-button-next",
@@ -2753,6 +2759,155 @@
         });
     });
 
+</script>
+
+
+
+<script>
+    // 검색할 배열
+    var arr = [
+        { name: "리플로우 커피" },
+        { name: "디카프워크룸" },
+        { name: "웨이브온 커피" },
+        { name: "슬러핀 커피" },
+        { name: "리플렉트 커피" },
+        { name: "55도 커피" },
+        { name: "프로토콜 커피" },
+        { name: "토치 커피" },
+        { name: "FELT" },
+        { name: "컬러드 빈" },
+        { name: "카페플롬" },
+        { name: "식물학 커피" },
+        { name: "오드이븐" },
+        { name: "하우트 커피컴퍼니" },
+        { name: "히떼 로스터리" },
+        { name: "콩볶는 사람들" },
+        { name: "커넥츠커피" },
+        { name: "베르크" },
+        { name: "커피몽타주" },
+        { name: "폰트 커피" },
+        { name: "한국 커피" },
+        { name: "하늘에 커피" },
+        { name: "차군 커피" },
+        { name: "리버벨" },
+        { name: "디벨로핑룸" },
+        { name: "알렉스더커피" },
+        { name: "수수커피" },
+
+    ];
+
+    // object 에 초성필드 추가 {name:"홍길동", diassembled:"ㅎㄱㄷ"}
+    arr.forEach(function (item) {
+        var dis = Hangul.disassemble(item.name, true);
+        var cho = dis.reduce(function (prev, elem) {
+            elem = elem[0] ? elem[0] : elem;
+            return prev + elem;
+        }, "");
+        item.diassembled = cho;
+    });
+
+    console.log(arr);
+
+    var ul = document.getElementById("find");
+    document.getElementById("txt").addEventListener("keyup", function () {
+        while (ul.firstChild) {
+            ul.removeChild(ul.firstChild);
+        }
+
+        var search = this.value;
+        var search1 = Hangul.disassemble(search).join(""); // ㄺ=>ㄹㄱ
+
+        arr
+            // 문자열 검색 || 초성검색
+            .filter(function (item) {
+                return item.name.includes(search) || item.diassembled.includes(search1);
+            })
+            // 검색결과 ul 아래에 li 로 추가
+            .forEach(function (item) {
+                var li = document.createElement("li");
+                li.innerHTML = item.name;
+
+                ul.appendChild(li);
+            });
+    });
+
+</script>
+
+
+<script>
+
+
+    'use strict';
+
+    let row = -1;
+    let col = 0;
+    let ww = document.querySelector('#wrap1').clientWidth - 16;
+    let count11 = Math.floor((ww) / 116);
+    let middle = (ww - (116 * count11)) / 2;
+    let all = document.querySelectorAll('[data-group]');
+    document.querySelector('#wrap1').style.transition = ".2s ease";
+
+
+    window.addEventListener('resize', function () {
+        ww = document.querySelector('#wrap1').clientWidth - 16;
+        count11 = Math.floor(ww / 116);
+        middle = (ww - (116 * count11)) / 2;
+        row = -1;
+        col = 0;
+
+        initCard();
+    }, true);
+
+    function initCard() {
+        all.forEach((item, index, list) => { // 초기화
+            if (index % count11 == 0) {
+                row++;
+                col = 0;
+            }
+            let xw = item.clientWidth + 2;
+            let xh = item.clientHeight + 2;
+            item.style.transform =
+                `scale3d(1,1,1) translate3d(${middle + (col * (100 + 16))}px, ${row * (160)}px, 0px)`;
+            col++;
+        });
+        document.querySelector('#wrap1').style.height = `${(row + 1) * 160}px`;
+    }
+
+    initCard();
+
+    let values = document.querySelectorAll("[data-value]");
+
+    let rowid = 0;
+    let colid = 0;
+    values.forEach((el) => {
+        el.addEventListener('click', function (event) {
+            rowid = -1;
+            colid = 0;
+            let idx = 0;
+            let val = event.target.dataset.value;
+
+            all.forEach(el => {
+                let arr = el.dataset.group.split(' ');
+                for (let a of arr) {
+                    if (a == val) {
+                        el.setAttribute("class", "show");
+                        if (idx % count11 == 0) {
+                            colid = 0;
+                            rowid++;
+                        }
+                        el.style.transform = `scale3d(1,1,1) translate3d(${middle + (colid * (100 + 16))}px, ${rowid * (160)}px,0px)`;
+                        colid++;
+                        idx++;
+                        document.querySelector('#wrap1').style.height = `${(rowid + 1) * 160}px`;
+                        break;
+                    } else {
+                        el.setAttribute("class", "hide");
+                        el.style.transform = `scale3d(0,0,1) translate3d(0px,0px,-1px)`;
+                    }
+                }
+            });
+        });
+    });
 </script>
 
 

@@ -755,8 +755,6 @@
                     <li><a href="#">STORE GUIDE</a></li>
                     <li><a href="#">CS CENTER</a></li>
                 </ul>
-
-
             </div>
         </div>
         <div class="footer_middle">
@@ -775,6 +773,46 @@
         <div class="footer_bottom">
             ⓒ 2021 Consumer Bridge, Inc. All rights reserved
         </div>
+    </div>
+
+    <div class="quick_menu">
+        <div class="search">
+            <a href="#">
+                <img src="../img/btn_hd_search.png" alt="검색">
+            </a>
+        </div>
+
+        <div class="shopping_basket">
+            <a href="#">
+                <img src="../img/shopping_basket.jpg" alt="장바구니">
+            </a>
+        </div>
+
+        <div class="delivery_tracking">
+            <a href="#">
+                <img src="../img/delivery_tracking.png" alt="배송조회">
+            </a>
+        </div>
+
+        <div class="recently_viewed">
+            <a href="#">
+                <img src="../img/recently_viewed.jpg" alt="최근본상품">
+            </a>
+        </div>
+
+        <div class="goTop">
+            <i class="xi-angle-up-thin"></i>
+        </div>
+        <div class="goBottom">
+            <i class="xi-angle-down-thin"></i>
+        </div>
+    </div>
+
+    <div class="quick_menu_hover">
+        <div class="search_hover">검색</div>
+        <div class="shopping_basket_hover">장바구니(1)</div>
+        <div class="delivery_tracking_hover">배송조회</div>
+        <div class="recently_viewed_hover">최근 본 상품</div>
     </div>
 
 
@@ -826,14 +864,16 @@
         btn.addEventListener('click', function () {
 
             if (isOpen == false) {
-                document.querySelector('.subscribed').style.display = 'block'
+                document.querySelector('.subscribed dt').style.display = 'block'
+                document.querySelector('.subscribed ul').style.display = 'block'
                 document.querySelector('.purchase').classList.remove("translate-x_left")
                 document.querySelector('.purchase').classList.add("translate-x")
 
                 isOpen = true
             } else {
 
-                document.querySelector('.subscribed').style.display = 'none'
+                document.querySelector('.subscribed dt').style.display = 'none'
+                document.querySelector('.subscribed ul').style.display = 'none'
                 document.querySelector('.purchase').classList.add("translate-x_left")
                 document.querySelector('.purchase').classList.remove("translate-x")
                 isOpen = false
@@ -857,18 +897,55 @@
         }
     });
 
-    $(function () {
-        $(".item_goods_tab a").click(function (e) {
-            e.preventDefault();
-            $(window).scrollTo(this.hash || 0, 1000);
-        });
-    });
+
 </script>
 
 <script>
+    $(document).ready(function () {
+        //TOP 버튼
+        $(".goTop").fadeOut();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 450) {
+                $(".goTop").fadeIn();
+            } else {
+                $(".goTop").fadeOut();
+            }
+        });
+        $(".goTop").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 300);
+            return false;
+        });
+    });
+    var scrollHeight = $(document).height();
+
+    $(document).ready(function () {
+        //TOP 버튼
+        $(".goBottom").fadeOut();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 450) {
+                $(".goBottom").fadeIn();
+            } else {
+                $(".goBottom").fadeOut();
+            }
+        });
+
+        $(".goBottom").click(function () {
+            $("html, body").animate({ scrollTop: scrollHeight }, 300);
+            return false;
+        });
+    });
 
 </script>
 
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".quick_menu > div").hover(function () {
+            $(".quick_menu_hover > div").css('display', 'block');
+        }, function () {
+            $(".quick_menu_hover > div").css('display', 'none');
+        })
+    });
+</script>
 
 
 </html>

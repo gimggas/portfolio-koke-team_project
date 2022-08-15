@@ -590,6 +590,13 @@ body {
 
 .subscribed {
   transform: translate(5px, 66px);
+}
+
+.subscribed dt {
+  display: none;
+}
+
+.subscribed ul {
   display: none;
 }
 
@@ -1080,6 +1087,79 @@ body {
 }
 
 /* ----------footer-------------- */
+
+/* ----------quick_menu-------------- */
+
+.quick_menu {
+  width: 50px;
+  height: 300px;
+  position: fixed;
+  top: 628px;
+  right: 0;
+}
+
+.quick_menu > div {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: 1px solid #cccccc;
+  background-color: white;
+}
+
+.quick_menu > div img {
+  width: 70%;
+  height: 70%;
+  transform: translate(6px, 6px);
+}
+
+.quick_menu .goTop,
+.quick_menu .goBottom {
+  background-color: #fdeae0;
+  text-align: center;
+  line-height: 50px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.quick_menu_hover > div {
+  width: 100px;
+  height: 26px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 26px;
+  font-size: 15px;
+  border-radius: 30px;
+  position: fixed;
+  top: 638px;
+  right: 70px;
+  display: none;
+}
+
+.quick_menu_hover > div:after {
+  content: "";
+  position: absolute;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid black;
+  border-top: 5px solid transparent;
+  right: -7px;
+  top: 8px;
+}
+
+.quick_menu .search:hover .quick_menu_hover > div {
+}
+
+.quick_menu_hover .shopping_basket_hover {
+  top: 688px;
+}
+.quick_menu_hover .delivery_tracking_hover {
+  top: 738px;
+}
+.quick_menu_hover .recently_viewed_hover {
+  top: 788px;
+}
+
+/* ----------quick_menu-------------- */
 .translate-x {
   animation: translatex 0.2s linear 1;
   transform: translateX(150px);

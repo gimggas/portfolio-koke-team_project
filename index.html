@@ -114,95 +114,57 @@
 
     <div class="brand_search">
         <div class="brand_search_inner">
-            <input type="text" id="brand_search" placeholder="브랜드 검색하기">
-            <i class="xi-search"></i>
-            <div class="consonant">
-                <button type="button" class="all">All</button>
-                <ul>
-                    <li>ㄱ</li>
-                    <li>ㄴ</li>
-                    <li>ㄷ</li>
-                    <li>ㄹ</li>
-                    <li>ㅁ</li>
-                    <li>ㅂ</li>
-                    <li>ㅅ</li>
-                    <li>ㅇ</li>
-                    <li>ㅈ</li>
-                    <li>ㅊ</li>
-                    <li>ㅋ</li>
-                    <li>ㅌ</li>
-                    <li>ㅍ</li>
-                    <li>ㅎ</li>
-                </ul>
-                <button type="button" class="eng">ENG</button>
+            <div class="brand_search_txt">
+                <input type="text" id="txt" placeholder="브랜드 검색하기">
+                <i class="xi-search"></i>
             </div>
-
-            <ul class="brand_searh_list">
-                <li>
-                    <ul>
-                        <li><a href="#">리플로우 커피</a></li>
-                        <li><a href="#">디카프워크룸</a></li>
-                        <li><a href="#">웨이브온 커피</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li><a href="#">슬러핀 커피</a></li>
-                        <li><a href="#">리플렉트 커피</a></li>
-                        <li><a href="#">55도 커피</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li><a href="#">프로토콜 커피</a></li>
-                        <li><a href="#">토치 커피</a></li>
-                        <li><a href="#">FELT</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li><a href="#">컬러드 빈</a></li>
-                        <li><a href="#">카페플롬</a></li>
-                        <li><a href="#">식물학 커피</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li><a href="#">오드이븐</a></li>
-                        <li><a href="#">하우트 커피 컴퍼니</a></li>
-                        <li><a href="#">히떼 로스터리</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li><a href="#">콩볶는 사람들</a></li>
-                        <li><a href="#">커넥츠커피</a></li>
-                        <li><a href="#">베르크</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li><a href="#">커피몽타주</a></li>
-                        <li><a href="#">폰트 커피</a></li>
-                        <li><a href="#">한국 커피</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li><a href="#">하늘에 커피</a></li>
-                        <li><a href="#">차군 커피</a></li>
-                        <li><a href="#">리버벨</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li><a href="#">디벨로핑룸</a></li>
-                        <li><a href="#">알렉스더커피</a></li>
-                        <li><a href="#">수수커피</a></li>
-                    </ul>
-                </li>
-            </ul>
-
+            <ul id="find"></ul>
+            <div class="btn-bundle justify-content-center">
+                <button class="px-3 btn btn-danger" data-value="all">all</button>
+                <div class="btn-info-box">
+                    <button class="px-3 btn btn-info" data-value="ㄱ">ㄱ</button>
+                    <button class="px-3 btn btn-info" data-value="ㄴ">ㄴ</button>
+                    <button class="px-3 btn btn-info" data-value="ㄷ">ㄷ</button>
+                    <button class="px-3 btn btn-info" data-value="ㄹ">ㄹ</button>
+                    <button class="px-3 btn btn-info" data-value="ㅁ">ㅂ</button>
+                    <button class="px-3 btn btn-info" data-value="ㅅ">ㅅ</button>
+                    <button class="px-3 btn btn-info" data-value="ㅇ">ㅇ</button>
+                    <button class="px-3 btn btn-info" data-value="ㅈ">ㅊ</button>
+                    <button class="px-3 btn btn-info" data-value="ㅋ">ㅋ</button>
+                    <button class="px-3 btn btn-info" data-value="ㅌ">ㅌ</button>
+                    <button class="px-3 btn btn-info" data-value="ㅍ">ㅍ</button>
+                    <button class="px-3 btn btn-info" data-value="ㅎ">ㅎ</button>
+                </div>
+            </div>
+            <div id="wrap1">
+                <span data-group="all ㄹ"><a href="#">리플로우 커피</a></span>
+                <span data-group="all ㄷ"><a href="#">디카프워크룸</a></span>
+                <span data-group="all ㅇ"><a href="#">웨이브온 커피</a></span>
+                <span data-group="all ㅅ"><a href="#">슬러핀커피</a></span>
+                <span data-group="all ㄹ"><a href="#">리플렉트 커피</a></span>
+                <span data-group="all 5"><a href="#">55도 커피</a></span>
+                <span data-group="all ㅍ"><a href="#">프로토콜 커피</a></span>
+                <span data-group="all ㅌ"><a href="#">토치 커피</a></span>
+                <span data-group="all F"><a href="#">FELT</a></span>
+                <span data-group="all ㅋ"><a href="#">컬러드 빈</a></span>
+                <span data-group="all ㅋ"><a href="#">카페플롬</a></span>
+                <span data-group="all ㅅ"><a href="#">식물학 커피</a></span>
+                <span data-group="all ㅇ"><a href="#">오드이븐</a></span>
+                <span data-group="all ㅎ"><a href="#">하우트 커피컴퍼니</a></span>
+                <span data-group="all ㅎ"><a href="#">히떼 로스터리</a></span>
+                <span data-group="all ㅋ"><a href="#">콩볶는 사람들</a></span>
+                <span data-group="all ㅋ"><a href="#">커넥츠커피</a></span>
+                <span data-group="all ㅂ"><a href="#">베르크</a></span>
+                <span data-group="all ㅋ"><a href="#">커피몽타주</a></span>
+                <span data-group="all ㅍ"><a href="#">폰트 커피</a></span>
+                <span data-group="all ㅎ"><a href="#">한국 커피</a></span>
+                <span data-group="all ㅎ"><a href="#">하늘에 커피</a></span>
+                <span data-group="all ㅊ"><a href="#">차군 커피</a></span>
+                <span data-group="all ㄹ"><a href="#">리버벨</a></span>
+                <span data-group="all ㄷ"><a href="#">디벨로핑룸</a></span>
+                <span data-group="all ㅇ"><a href="#">알렉스더커피</a></span>
+                <span data-group="all ㅅ"><a href="#">수수커피</a></span>
+            </div>
         </div>
     </div>
 

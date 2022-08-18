@@ -249,6 +249,7 @@ body {
 }
 
 
+
 .brand_search {
   width: 100%;
   height: 400px;
@@ -258,6 +259,7 @@ body {
   top: 141px;
   z-index: 1;
   display: none;
+  border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
 }
@@ -267,31 +269,33 @@ body {
   margin: 85px auto;
 }
 
-.brand_search_inner #brand_search {
-  width: 608.5px;
-  height: 32px;
-  font-size: 17px;
-  color: #777777;
-  border: none;
-  border-bottom: 1px solid #ccc;
-  box-sizing: border-box;
-  padding-left: 10px;
-}
-
-.brand_search_inner i {
-  font-size: 25px;
-  transform: translate(-35px, 5px);
-  cursor: pointer;
-}
-
-.brand_search_inner .consonant {
-  width: 608.5px;
-  height: 40px;
-  margin-top: 18px;
+.brand_search .brand_search_txt {
   display: flex;
 }
 
-.brand_search_inner .consonant button {
+.brand_search .brand_search_inner #txt {
+  width: 608.5px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+
+.brand_search_inner i {
+  font-size: 25px;
+  transform: translate(-35PX,5px);
+  cursor: pointer;
+}
+
+.brand_search_inner .btn-bundle {
+  width: 608.5px;
+  height: 40px;
+  margin-top: 18px;
+  display: FLEX;
+
+}
+
+.brand_search_inner .btn-danger {
   width: 50px;
   height: 40px;
   border-radius: 10px;
@@ -301,7 +305,7 @@ body {
   border: 1px solid #ccc;
 }
 
-.brand_search_inner .consonant > ul {
+.brand_search_inner .btn-info-box {
   width: 488px;
   height: 40px;
   line-height: 40px;
@@ -311,21 +315,25 @@ body {
   box-sizing: border-box;
 }
 
-.brand_search_inner .consonant > ul li {
-  width: 34.6px;
+.brand_search_inner .btn-info {
+  width: 40.5px;
+  height: 35px;
   font-size: 15px;
   float: left;
+  border: none;
+  background-color: white;
   text-align: center;
+  cursor: pointer;
 }
 
-.brand_search_inner .consonant > ul li::after {
+.brand_search_inner .btn-info::after {
   padding-left: 8px;
   content: "|";
   color: #ccc;
 }
 /* 간격주고 | 넣기  */
 
-.brand_search_inner .consonant > ul li:last-child::after {
+.brand_search_inner .btn-info:last-child::after {
   content: "";
 }
 

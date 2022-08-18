@@ -78,7 +78,6 @@
                     <div class="search">
                         <input type="image" id="search_box" src="../img/btn_hd_search.png">
                         <input type="text" id="search_form">
-
                     </div>
                     <div class="search_cont">
                         <div class="logoBox">
@@ -90,7 +89,6 @@
                         </div>
                     </div>
                 </nav>
-
             </div>
         </header>
     </div>
@@ -235,20 +233,8 @@
                     </ul>
                 </li>
             </ul>
-
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
     <div class="wrap">
@@ -265,9 +251,6 @@
                 </ul>
             </div>
 
-
-
-
             <div class="style_wrapper">
                 <div class="hide_mobile_wrapper">
                     <div class="hide_mobile">
@@ -279,12 +262,8 @@
                             <input type="checkbox" id="hamBtn">
                             <li class="flavor">맛과 향<i class="xi-angle-down-min"></i>
                                 <i class="xi-angle-up-min"></i>
-                                <label for="hamBtn" class="openBtn">
-
-                                </label>
-                                <label for="hamBtn" class="closeBtn">
-
-                                </label>
+                                <label for="hamBtn" class="openBtn"></label>
+                                <label for="hamBtn" class="closeBtn"></label>
                             </li>
                             <div class="taste tab">
                                 <div class="taste01">달콤</div>
@@ -307,8 +286,6 @@
                                 <div class="taste18">은은한</div>
                                 <div class="taste19">화사한</div>
                             </div>
-
-
                             <li>로스팅 브랜드
                                 <i class="xi-angle-down-min"></i>
                             </li>
@@ -336,7 +313,6 @@
                         <li><a href="#">상품평순</a></li>
                         <li><a href="#">등록일순</a></li>
                     </ul>
-
                     <div class="tab_sheet">
                         <ul class="items_coffees on_sheet">
                             <li>
@@ -1128,6 +1104,8 @@
                 </div>
         </section>
     </div>
+
+
     <div class="footerWrap">
         <div class="footer_top">
             <div class="footer_top_inner">
@@ -1139,7 +1117,6 @@
                             점심시간 : 오후 12:00 ~ 2:00<br>
                             토 / 일 / 공휴일 휴무</p>
                     </li>
-
                     <li class="list02">
                         <p class="store_guide">store_guide</p>
                         <ul>
@@ -1240,25 +1217,21 @@
                 <img src="../img/btn_hd_search.png" alt="검색">
             </a>
         </div>
-
         <div class="shopping_basket">
             <a href="#">
                 <img src="../img/shopping_basket.jpg" alt="장바구니">
             </a>
         </div>
-
         <div class="delivery_tracking">
             <a href="#">
                 <img src="../img/delivery_tracking.png" alt="배송조회">
             </a>
         </div>
-
         <div class="recently_viewed">
             <a href="#">
                 <img src="../img/recently_viewed.jpg" alt="최근본상품">
             </a>
         </div>
-
         <div class="goTop">
             <i class="xi-angle-up-thin"></i>
         </div>
@@ -1273,128 +1246,8 @@
         <div class="delivery_tracking_hover">배송조회</div>
         <div class="recently_viewed_hover">최근 본 상품</div>
     </div>
-
-
-
 </body>
 
-<script>
-    $(function () {
-        let tab = $(".style_main .tab li");
-        let sheet = $(".tab_sheet ul");
-
-        tab.click(function () {
-            let target = $(this);
-            let i = target.index();
-
-            tab.removeClass("on");
-            tab.eq(i).addClass("on");
-
-            sheet.removeClass("on_sheet");
-            sheet.eq(i).addClass("on_sheet");
-        });
-    });
-</script>
-
-<script>
-    $(window).load(function () {
-        $(function () {
-            $(".quick_menu div").hover(
-                function () {
-                    $(".quick_menu_hover div").fadeIn();
-                },
-                function () {
-                    $(".quick_menu_hover div").fadeOut();
-                }
-            );
-        });
-    });
-</script>
-
-<script>
-    $(document).ready(function () {
-        //TOP 버튼
-        $(".goTop").fadeOut();
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 450) {
-                $(".goTop").fadeIn();
-            } else {
-                $(".goTop").fadeOut();
-            }
-        });
-        $(".goTop").click(function () {
-            $("html, body").animate({ scrollTop: 0 }, 300);
-            return false;
-        });
-    });
-    var scrollHeight = $(document).height();
-
-    $(document).ready(function () {
-        //TOP 버튼
-        $(".goBottom").fadeOut();
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 450) {
-                $(".goBottom").fadeIn();
-            } else {
-                $(".goBottom").fadeOut();
-            }
-        });
-
-        $(".goBottom").click(function () {
-            $("html, body").animate({ scrollTop: scrollHeight }, 300);
-            return false;
-        });
-    });
-</script>
-
-<script>
-    /* size click */
-    var div2 = document.querySelectorAll(".taste >div");
-
-    function handleClick(event) {
-        console.log(event.target);
-        // console.log(this);
-        // 콘솔창을 보면 둘다 동일한 값이 나온다
-
-        console.log(event.target.classList);
-
-        if (event.target.classList[1] === "clicked") {
-            event.target.classList.remove("clicked");
-        } else {
-            for (let i = 0; i < div2.length; i++) {
-                div2[i].classList.remove("clicked");
-            }
-
-            event.target.classList.add("clicked");
-        }
-    }
-
-
-    function init() {
-        for (var i = 0; i < div2.length; i++) {
-            div2[i].addEventListener("click", handleClick);
-        }
-    }
-    init();
-</script>
-
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<!-- 
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            renderBullet: function (index, className) {
-                return '<span class="' + className + '">' + (index + 1) + "</span>";
-            },
-        },
-    });
-</script> -->
-
-
-
-
-
 
 </html>

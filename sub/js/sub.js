@@ -1,3 +1,5 @@
+/* style_banner */
+
 $(function () {
   function styleBannerHandler() {
     $(".style_banner").slideUp();
@@ -5,16 +7,19 @@ $(function () {
   $(".style_banner .close_btn").on("click", styleBannerHandler);
 });
 
+/* lnb_subMenu */
+
 $(document).ready(function () {
   $("#menuBtn").mouseover(function () {
     $(".menuWrap").slideDown(200);
     $(".brand_search").css("display", "none");
   });
-
   $("#menuBtn").click(function () {
     $(".menuWrap").slideUp(200);
   });
 });
+
+/* brand_search */
 
 $(function () {
   let btn = $(".lnb .brand_list");
@@ -26,6 +31,8 @@ $(function () {
     $(".menuWrap").css("display", "none");
   });
 });
+
+/* search_box */
 
 document.addEventListener("DOMContentLoaded", () => {
   const searchBox = document.querySelector("#search_box");
@@ -39,6 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
     searchForm.setAttribute("placeholder", "");
   });
 });
+
+/* scroll Header */
 
 $(window).scroll(function () {
   var position = $(window).scrollTop();
@@ -54,6 +63,30 @@ $(window).scroll(function () {
     $(".menuWrap").removeClass("position");
   }
 });
+
+/* taste click  */
+
+var div2 = document.querySelectorAll(".taste >div");
+
+function handleClick(event) {
+  if (event.target.classList[1] === "clicked") {
+    event.target.classList.remove("clicked");
+  } else {
+    for (let i = 0; i < div2.length; i++) {
+      div2[i].classList.remove("clicked");
+    }
+    event.target.classList.add("clicked");
+  }
+}
+
+function init() {
+  for (var i = 0; i < div2.length; i++) {
+    div2[i].addEventListener("click", handleClick);
+  }
+}
+init();
+
+/* search coffee */
 
 let header = document.querySelector(".hide_mobile");
 let headerHeight = header.offsetHeight;
@@ -71,6 +104,8 @@ window.onscroll = function () {
   }
 };
 
+/* shopping_cart click */
+
 document.addEventListener("DOMContentLoaded", () => {
   const plus = document.querySelectorAll(".icon03");
   let resultElement = document.querySelector(".count");
@@ -84,16 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-$(document).ready(function () {
-  $(".quick_menu > div").hover(
-    function () {
-      $(".quick_menu_hover > div").css("display", "block");
-    },
-    function () {
-      $(".quick_menu_hover > div").css("display", "none");
-    }
-  );
-});
+/* items_coffees tabMenu */
 
 $(function () {
   let tab = $(".style_main .tab li");
@@ -111,6 +137,21 @@ $(function () {
   });
 });
 
+/* quick_menu hover */
+
+$(document).ready(function () {
+  $(".quick_menu > div").hover(
+    function () {
+      $(".quick_menu_hover > div").css("display", "block");
+    },
+    function () {
+      $(".quick_menu_hover > div").css("display", "none");
+    }
+  );
+});
+
+/* quick_menu fade_in,out & click*/
+
 $(document).ready(function () {
   //TOP 버튼
   $(".goTop").fadeOut();
@@ -127,9 +168,8 @@ $(document).ready(function () {
   });
 });
 var scrollHeight = $(document).height();
-
 $(document).ready(function () {
-  //TOP 버튼
+  //BOTTOM 버튼
   $(".goBottom").fadeOut();
   $(window).scroll(function () {
     if ($(this).scrollTop() > 450) {

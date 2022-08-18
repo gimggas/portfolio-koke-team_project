@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="js/jquery-3.6.0.min.js"></script>
     <script defer src="js/main.js"></script>
-
     <script src="js/jquery.mb.YTPlayer.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -23,12 +22,8 @@
         AOS.init();
     </script>
     <script src="js/hangul.js"></script>
-    <script
-        id="gatsby-script-loader">/*<![CDATA[*/window.pagePath = "/javascript-category-filter"; window.___webpackCompilationHash = "6424240f8b8bc8c43b28";/*]]>*/</script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
-
 </head>
 
 <body style="overflow-x: hidden">
@@ -44,6 +39,8 @@
             </div>
         </div>
     </div>
+
+
 
     <div class="headerWrap">
         <header class="header">
@@ -64,8 +61,6 @@
                     </ul>
                 </nav>
             </div>
-
-
             <div class="lnbBox">
                 <nav class="lnb">
                     <div class="lnb_left">
@@ -114,57 +109,94 @@
 
     <div class="brand_search">
         <div class="brand_search_inner">
-            <div class="brand_search_txt">
-                <input type="text" id="txt" placeholder="브랜드 검색하기">
-                <i class="xi-search"></i>
+            <input type="text" id="brand_search" placeholder="브랜드 검색하기">
+            <i class="xi-search"></i>
+            <div class="consonant">
+                <button type="button" class="all">All</button>
+                <ul>
+                    <li>ㄱ</li>
+                    <li>ㄴ</li>
+                    <li>ㄷ</li>
+                    <li>ㄹ</li>
+                    <li>ㅁ</li>
+                    <li>ㅂ</li>
+                    <li>ㅅ</li>
+                    <li>ㅇ</li>
+                    <li>ㅈ</li>
+                    <li>ㅊ</li>
+                    <li>ㅋ</li>
+                    <li>ㅌ</li>
+                    <li>ㅍ</li>
+                    <li>ㅎ</li>
+                </ul>
+                <button type="button" class="eng">ENG</button>
             </div>
-            <ul id="find"></ul>
-            <div class="btn-bundle justify-content-center">
-                <button class="px-3 btn btn-danger" data-value="all">all</button>
-                <div class="btn-info-box">
-                    <button class="px-3 btn btn-info" data-value="ㄱ">ㄱ</button>
-                    <button class="px-3 btn btn-info" data-value="ㄴ">ㄴ</button>
-                    <button class="px-3 btn btn-info" data-value="ㄷ">ㄷ</button>
-                    <button class="px-3 btn btn-info" data-value="ㄹ">ㄹ</button>
-                    <button class="px-3 btn btn-info" data-value="ㅁ">ㅂ</button>
-                    <button class="px-3 btn btn-info" data-value="ㅅ">ㅅ</button>
-                    <button class="px-3 btn btn-info" data-value="ㅇ">ㅇ</button>
-                    <button class="px-3 btn btn-info" data-value="ㅈ">ㅊ</button>
-                    <button class="px-3 btn btn-info" data-value="ㅋ">ㅋ</button>
-                    <button class="px-3 btn btn-info" data-value="ㅌ">ㅌ</button>
-                    <button class="px-3 btn btn-info" data-value="ㅍ">ㅍ</button>
-                    <button class="px-3 btn btn-info" data-value="ㅎ">ㅎ</button>
-                </div>
-            </div>
-            <div id="wrap1">
-                <span data-group="all ㄹ"><a href="#">리플로우 커피</a></span>
-                <span data-group="all ㄷ"><a href="#">디카프워크룸</a></span>
-                <span data-group="all ㅇ"><a href="#">웨이브온 커피</a></span>
-                <span data-group="all ㅅ"><a href="#">슬러핀커피</a></span>
-                <span data-group="all ㄹ"><a href="#">리플렉트 커피</a></span>
-                <span data-group="all 5"><a href="#">55도 커피</a></span>
-                <span data-group="all ㅍ"><a href="#">프로토콜 커피</a></span>
-                <span data-group="all ㅌ"><a href="#">토치 커피</a></span>
-                <span data-group="all F"><a href="#">FELT</a></span>
-                <span data-group="all ㅋ"><a href="#">컬러드 빈</a></span>
-                <span data-group="all ㅋ"><a href="#">카페플롬</a></span>
-                <span data-group="all ㅅ"><a href="#">식물학 커피</a></span>
-                <span data-group="all ㅇ"><a href="#">오드이븐</a></span>
-                <span data-group="all ㅎ"><a href="#">하우트 커피컴퍼니</a></span>
-                <span data-group="all ㅎ"><a href="#">히떼 로스터리</a></span>
-                <span data-group="all ㅋ"><a href="#">콩볶는 사람들</a></span>
-                <span data-group="all ㅋ"><a href="#">커넥츠커피</a></span>
-                <span data-group="all ㅂ"><a href="#">베르크</a></span>
-                <span data-group="all ㅋ"><a href="#">커피몽타주</a></span>
-                <span data-group="all ㅍ"><a href="#">폰트 커피</a></span>
-                <span data-group="all ㅎ"><a href="#">한국 커피</a></span>
-                <span data-group="all ㅎ"><a href="#">하늘에 커피</a></span>
-                <span data-group="all ㅊ"><a href="#">차군 커피</a></span>
-                <span data-group="all ㄹ"><a href="#">리버벨</a></span>
-                <span data-group="all ㄷ"><a href="#">디벨로핑룸</a></span>
-                <span data-group="all ㅇ"><a href="#">알렉스더커피</a></span>
-                <span data-group="all ㅅ"><a href="#">수수커피</a></span>
-            </div>
+
+            <ul class="brand_searh_list">
+                <li>
+                    <ul>
+                        <li><a href="#">리플로우 커피</a></li>
+                        <li><a href="#">디카프워크룸</a></li>
+                        <li><a href="#">웨이브온 커피</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">슬러핀 커피</a></li>
+                        <li><a href="#">리플렉트 커피</a></li>
+                        <li><a href="#">55도 커피</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">프로토콜 커피</a></li>
+                        <li><a href="#">토치 커피</a></li>
+                        <li><a href="#">FELT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">컬러드 빈</a></li>
+                        <li><a href="#">카페플롬</a></li>
+                        <li><a href="#">식물학 커피</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">오드이븐</a></li>
+                        <li><a href="#">하우트 커피 컴퍼니</a></li>
+                        <li><a href="#">히떼 로스터리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">콩볶는 사람들</a></li>
+                        <li><a href="#">커넥츠커피</a></li>
+                        <li><a href="#">베르크</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">커피몽타주</a></li>
+                        <li><a href="#">폰트 커피</a></li>
+                        <li><a href="#">한국 커피</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">하늘에 커피</a></li>
+                        <li><a href="#">차군 커피</a></li>
+                        <li><a href="#">리버벨</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">디벨로핑룸</a></li>
+                        <li><a href="#">알렉스더커피</a></li>
+                        <li><a href="#">수수커피</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -215,15 +247,6 @@
 
         </div>
     </div>
-
-
-
-
-
-
-
-
-
 
 
     <div class="visual_main">
@@ -1194,7 +1217,7 @@
                                             </div>
                                             <div class="hot_contents_top_brand brand">
                                                 <div class="hot_contents_top_brand_txt txt">
-                                                    <div class="img">
+                                                    <div class="imsg">
                                                         <img src="img/logo_05.png" alt="베르크 로스터스">
                                                     </div>
                                                     <div class="name">
@@ -1926,6 +1949,8 @@
                 </div>
             </div>
         </div>
+
+
         <div class="roastery">
             <div class="roastery01">
                 <h3>ROASTERY</h3>
@@ -1993,46 +2018,10 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
-
-            <!-- <div class="logo">
-                <ul>
-                    <li>
-                        <div class="img">
-                            <img src="img/logo_06.jpg" alt="roastery01">
-                        </div>
-                        <div class="txt">55˚ 커피</div>
-                    </li>
-                    <li>
-                        <div class="img">
-                            <img src="img/logo_07.png" alt="roastery02">
-                        </div>
-                        <div class="txt">알렉스더커피</div>
-                    </li>
-                    <li>
-
-                    </li>
-                    <li>
-                        <div class="img">
-                            <img src="img/logo_13.png" alt="roastery04">
-                        </div>
-                        <div class="txt">폰트커피</div>
-                    </li>
-                    <li>
-                        <div class="img">
-                            <img src="img/logo_08.png" alt="roastery05">
-                        </div>
-                        <div class="txt">커넥츠커피</div>
-                    </li>
-                    <li>
-                        <div class="img">
-                            <img src="img/logo_11.png" alt="roastery06">
-                        </div>
-                        <div class="txt">차군커피</div>
-                    </li>
-                </ul>
-            </div> -->
         </div>
     </section>
+
+
 
     <div class="sub_banner">
         <div class="sub_banner_inner scroll_el">
@@ -2048,8 +2037,6 @@
                     특별함이 더해지는 순간을 기대합니다.
                 </p>
             </div>
-
-
             <section class="season_concept origin position_right delay_01">
                 <div class="season_concept_movie">
                     <iframe width="628" height="352" src="https://www.youtube.com/embed/WF4jHGcZtT0"
@@ -2059,23 +2046,6 @@
                     </iframe>
                 </div>
             </section>
-
-
-
-            <!--
-            <section class="movieBg">
-                <h3>롯데월드의 계절을 담다</h3>
-                <p>포토그래퍼의 시선으로 담아본 롯데월드의 아름다운 모습을 영상으로 만나보세요! </p>
-                <div class="btn">
-                    <i class="xi-pause"></i>
-                    <i class="xi-play"></i>
-                </div>
-
-
-                <div id="bgndVideo" class="player"></div>
-            </section>
-            -->
-
         </div>
     </div>
 
@@ -2184,59 +2154,8 @@
                         </a>
                     </div>
                 </div>
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div> -->
-                <!-- <div class="swiper-pagination"></div> -->
             </div>
-
-
-            <!--
-            <ul>
-                <li>
-                   
-                </li>
-                <li>
-                    <div class="review_contents_img02 img">
-                        <img src="img/review_02.jpg" alt="review02">
-                    </div>
-                    <div class="review_contents_txt02 txt">
-                        <p class="subject">[영앤도터스] 룰라바이</p>
-                        <div class="etc">
-                            <span>eddf***님의 후기</span>
-                            <span></span>
-                        </div>
-                        <p class="conts">다양한 원두를 입맛대로 골라 먹을 수 있어 정말 좋아요~</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="review_contents_img03 img">
-                        <img src="img/review_03.jpg" alt="review03">
-                    </div>
-                    <div class="review_contents_txt03 txt">
-                        <p class="subject">[영앤도터스] 룰라바이</p>
-                        <div class="etc">
-                            <span>eddf***님의 후기</span>
-                            <span></span>
-                        </div>
-                        <p class="conts">다양한 원두를 입맛대로 골라 먹을 수 있어 정말 좋아요~</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="review_contents_img04 img">
-                        <img src="img/review_04.jpg" alt="review04">
-                    </div>
-                    <div class="review_contents_txt04 txt">
-                        <p class="subject">[영앤도터스] 룰라바이</p>
-                        <div class="etc">
-                            <span>eddf***님의 후기</span>
-                            <span></span>
-                        </div>
-                        <p class="conts">다양한 원두를 입맛대로 골라 먹을 수 있어 정말 좋아요~</p>
-                    </div>
-                </li>
-            </ul>
         </div>
-        -->
     </section>
 
 
@@ -2325,8 +2244,6 @@
                     <li><a href="#">STORE GUIDE</a></li>
                     <li><a href="#">CS CENTER</a></li>
                 </ul>
-
-
             </div>
         </div>
         <div class="footer_middle">
@@ -2353,25 +2270,21 @@
                 <img src="img/btn_hd_search.png" alt="검색">
             </a>
         </div>
-
         <div class="shopping_basket">
             <a href="#">
                 <img src="img/shopping_basket.jpg" alt="장바구니">
             </a>
         </div>
-
         <div class="delivery_tracking">
             <a href="#">
                 <img src="img/delivery_tracking.png" alt="배송조회">
             </a>
         </div>
-
         <div class="recently_viewed">
             <a href="#">
                 <img src="img/recently_viewed.jpg" alt="최근본상품">
             </a>
         </div>
-
         <div class="goTop">
             <i class="xi-angle-up-thin"></i>
         </div>
@@ -2380,497 +2293,16 @@
         </div>
     </div>
 
+
     <div class="quick_menu_hover">
         <div class="search_hover">검색</div>
         <div class="shopping_basket_hover">장바구니(1)</div>
         <div class="delivery_tracking_hover">배송조회</div>
         <div class="recently_viewed_hover">최근 본 상품</div>
     </div>
-
-
 </body>
 
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<!-- <script>
-    var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-</script> -->
-
-<script>
-    var swiper = new Swiper(".mySwiper01", {
-        slidesPerView: 6,
-        spaceBetween: 5,
-        slidesPerGroup: 1,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-</script>
-<script>
-    var swiper = new Swiper(".mySwiper02", {
-        slidesPerView: 1,
-        spaceBetween: 5,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-</script>
-
-
-
-<!-- <script>
-    var swiper = new Swiper(".mySwiper03", {
-        slidesPerView: 4,
-        spaceBetween: 5,
-        pagination: {
-            el: ".swiper-pagination",
-            type: "fraction",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-</script> -->
-
-
-<script>
-    var swiper = new Swiper(".mySwiper04", {
-        spaceBetween: 10,
-        slidesPerView: 4,
-        freeMode: true,
-        watchSlidesProgress: true,
-    });
-
-</script>
-
-
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const searchBox = document.querySelector("#search_box");
-        const searchForm = document.querySelector("#search_form");
-
-        searchBox.addEventListener("mouseenter", () => {
-            searchForm.setAttribute("placeholder", "SEARCH");
-        });
-
-        searchBox.addEventListener("blur", () => {
-            searchForm.setAttribute("placeholder", "");
-        });
-    });
-</script>
-
-<script>
-    $(window).scroll(function () {
-        var position = $(window).scrollTop();
-        if (position > 106) {
-            $(".headerWrap").addClass('fix');
-            $(".brand_search").addClass('position');
-            $(".logoBox").addClass('border');
-            $(".headerWrap").addClass('border');
-            $(".menuWrap").addClass('position');
-        } else if (position < 106) {
-            $(".logoBox").removeClass('border');
-            $(".headerWrap").removeClass('fix');
-            $(".brand_search").removeClass('position');
-            $(".headerWrap").removeClass('border');
-            $(".menuWrap").removeClass('position');
-        }
-    });
-</script>
-<script>
-    $(function () {
-        let tab = $(".best .tab li");
-        let sheet = $(".best .tab_sheet > div");
-
-        tab.click(function () {
-            let target = $(this);
-            let i = target.index();
-
-            tab.removeClass("on");
-            tab.eq(i).addClass("on");
-
-            sheet.removeClass("on_sheet");
-            sheet.eq(i).addClass("on_sheet");
-        });
-    });
-
-</script>
-
-
-
-
-
-<script>
-    //메인 애니메이션
-    AOS.init({
-        disable: 'phone',// accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-        once: false, // whether animation should happen only once - while scrolling down
-        /*disable: function() {
-            var maxWidth = 783;
-            return window.innerWidth < maxWidth;
-        }*/
-    });
-
-    $(window).resize(function () {
-        //메인 애니메이션
-        AOS.init({
-            disable: 'phone',// accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-            once: false, // whether animation should happen only once - while scrolling down
-        });
-    });
-</script>
-
-<script>
-
-    document.addEventListener("DOMContentLoaded", () => {
-        const plus = document.querySelectorAll(".shopping_cart");
-        let resultElement = document.querySelector(".count");
-        let number = resultElement.innerText;
-
-        plus.forEach(function (value) {
-            value.addEventListener("click", () => {
-                number = parseInt(number) + 1;
-                resultElement.innerText = number;
-            });
-        });
-    });
-</script>
-
-
-<script>
-
-</script>
-
-<!--
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        let mainImg = document.querySelector(".hot_contents_top div >img");
-        let thumImg = document.querySelectorAll(".hot_contents_bottom div >img");
-
-        for (let i = 0; i < thumImg.length; i++) {
-            thumImg[i].onclick = mainBox;
-        }
-
-        function mainBox() {
-            let newImg = this.src;
-            mainImg.setAttribute("src", newImg);
-        }
-    });
-</script>-->
-
-<script>
-    $(function () {
-        let tab = $(".hot .hot_wrap .logo > div");
-        let sheet = $(".hot_contents_wrap > div");
-
-        tab.click(function () {
-            let target = $(this);
-            let i = target.index();
-
-            tab.removeClass("on");
-            tab.eq(i).addClass("on");
-
-            sheet.removeClass("on_sheet");
-            sheet.eq(i).addClass("on_sheet");
-        });
-    });
-</script>
-
-
-<script>
-    $(window).load(function () {
-        $(function () {
-            $('.quick_menu div').hover(function () {
-                $('.quick_menu_hover div').fadeIn();
-            }, function () {
-                $('.quick_menu_hover div').fadeOut();
-            });
-        });
-    });
-</script>
-<script>
-    $(document).ready(function () {
-        //TOP 버튼
-        $('.goTop').fadeOut();
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 450) {
-                $('.goTop').fadeIn();
-            } else {
-                $('.goTop').fadeOut();
-            }
-        });
-        $('.goTop').click(function () {
-            $('html, body').animate({ scrollTop: 0 }, 300);
-            return false;
-        });
-    });
-    var scrollHeight = $(document).height();
-
-    $(document).ready(function () {
-        //TOP 버튼
-        $('.goBottom').fadeOut();
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 450) {
-                $('.goBottom').fadeIn();
-            } else {
-                $('.goBottom').fadeOut();
-            }
-        });
-
-        $('.goBottom').click(function () {
-            $('html, body').animate({ scrollTop: scrollHeight }, 300);
-            return false;
-        });
-    });
-
-</script>
-<script>
-    /* product&event ScrollMagic */
-    const scrollEls = document.querySelectorAll(".scroll_el");
-
-    scrollEls.forEach((scrollEl) => {
-        new ScrollMagic.Scene({
-            triggerElement: scrollEl, //감지해야할 대상
-            triggerHook: 0.7, //감지 위치
-        })
-            .setClassToggle(scrollEl, "show")
-            .addTo(new ScrollMagic.Controller());
-    });
-
-</script>
-
-
-
-<script>
-    // $(function () {
-    //     let btn = $('.lnb .btn');
-    //     let list = $('.list');
-
-    //     btn.click(function () {
-    //         list.slideToggle('fast');
-    //     });
-    // });
-
-
-
-    $(function () {
-        let btn = $('.lnb .brand_list');
-        let list = $('.brand_search');
-
-        btn.click(function () {
-            $(".logoBox").addClass('border');
-            list.slideToggle('fast');
-            $(".menuWrap").css('display', 'none');
-        });
-    });
-
-
-
-
-</script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $(".quick_menu > div").hover(function () {
-            $(".quick_menu_hover > div").css('display', 'block');
-        }, function () {
-            $(".quick_menu_hover > div").css('display', 'none');
-        })
-    });
-</script>
-<script>
-
-    $(document).ready(function () {
-        $("#menuBtn").mouseover(function () {
-            $(".menuWrap").slideDown(200)
-            $(".brand_search").css('display', 'none');
-        });
-        $("#menuBtn").click(function () {
-            $(".menuWrap").slideUp(200)
-        });
-    });
-
-</script>
-
-
-
-<script>
-    // 검색할 배열
-    var arr = [
-        { name: "리플로우 커피" },
-        { name: "디카프워크룸" },
-        { name: "웨이브온 커피" },
-        { name: "슬러핀 커피" },
-        { name: "리플렉트 커피" },
-        { name: "55도 커피" },
-        { name: "프로토콜 커피" },
-        { name: "토치 커피" },
-        { name: "FELT" },
-        { name: "컬러드 빈" },
-        { name: "카페플롬" },
-        { name: "식물학 커피" },
-        { name: "오드이븐" },
-        { name: "하우트 커피컴퍼니" },
-        { name: "히떼 로스터리" },
-        { name: "콩볶는 사람들" },
-        { name: "커넥츠커피" },
-        { name: "베르크" },
-        { name: "커피몽타주" },
-        { name: "폰트 커피" },
-        { name: "한국 커피" },
-        { name: "하늘에 커피" },
-        { name: "차군 커피" },
-        { name: "리버벨" },
-        { name: "디벨로핑룸" },
-        { name: "알렉스더커피" },
-        { name: "수수커피" },
-
-    ];
-
-    // object 에 초성필드 추가 {name:"홍길동", diassembled:"ㅎㄱㄷ"}
-    arr.forEach(function (item) {
-        var dis = Hangul.disassemble(item.name, true);
-        var cho = dis.reduce(function (prev, elem) {
-            elem = elem[0] ? elem[0] : elem;
-            return prev + elem;
-        }, "");
-        item.diassembled = cho;
-    });
-
-    console.log(arr);
-
-    var ul = document.getElementById("find");
-    document.getElementById("txt").addEventListener("keyup", function () {
-        while (ul.firstChild) {
-            ul.removeChild(ul.firstChild);
-        }
-
-        var search = this.value;
-        var search1 = Hangul.disassemble(search).join(""); // ㄺ=>ㄹㄱ
-
-        arr
-            // 문자열 검색 || 초성검색
-            .filter(function (item) {
-                return item.name.includes(search) || item.diassembled.includes(search1);
-            })
-            // 검색결과 ul 아래에 li 로 추가
-            .forEach(function (item) {
-                var li = document.createElement("li");
-                li.innerHTML = item.name;
-
-                ul.appendChild(li);
-            });
-    });
-
-</script>
-
-
-<script>
-
-
-    'use strict';
-
-    let row = -1;
-    let col = 0;
-    let ww = document.querySelector('#wrap1').clientWidth - 16;
-    let count11 = Math.floor((ww) / 116);
-    let middle = (ww - (116 * count11)) / 2;
-    let all = document.querySelectorAll('[data-group]');
-    document.querySelector('#wrap1').style.transition = ".2s ease";
-
-
-    window.addEventListener('resize', function () {
-        ww = document.querySelector('#wrap1').clientWidth - 16;
-        count11 = Math.floor(ww / 116);
-        middle = (ww - (116 * count11)) / 2;
-        row = -1;
-        col = 0;
-
-        initCard();
-    }, true);
-
-    function initCard() {
-        all.forEach((item, index, list) => { // 초기화
-            if (index % count11 == 0) {
-                row++;
-                col = 0;
-            }
-            let xw = item.clientWidth + 2;
-            let xh = item.clientHeight + 2;
-            item.style.transform =
-                `scale3d(1,1,1) translate3d(${middle + (col * (100 + 16))}px, ${row * (160)}px, 0px)`;
-            col++;
-        });
-        document.querySelector('#wrap1').style.height = `${(row + 1) * 160}px`;
-    }
-
-    initCard();
-
-    let values = document.querySelectorAll("[data-value]");
-
-    let rowid = 0;
-    let colid = 0;
-    values.forEach((el) => {
-        el.addEventListener('click', function (event) {
-            rowid = -1;
-            colid = 0;
-            let idx = 0;
-            let val = event.target.dataset.value;
-
-            all.forEach(el => {
-                let arr = el.dataset.group.split(' ');
-                for (let a of arr) {
-                    if (a == val) {
-                        el.setAttribute("class", "show");
-                        if (idx % count11 == 0) {
-                            colid = 0;
-                            rowid++;
-                        }
-                        el.style.transform = `scale3d(1,1,1) translate3d(${middle + (colid * (100 + 16))}px, ${rowid * (160)}px,0px)`;
-                        colid++;
-                        idx++;
-                        document.querySelector('#wrap1').style.height = `${(rowid + 1) * 160}px`;
-                        break;
-                    } else {
-                        el.setAttribute("class", "hide");
-                        el.style.transform = `scale3d(0,0,1) translate3d(0px,0px,-1px)`;
-                    }
-                }
-            });
-        });
-    });
-</script>
-
 
 </html>
